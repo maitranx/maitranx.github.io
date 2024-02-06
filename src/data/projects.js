@@ -22,16 +22,16 @@ const projects = [
         isFeature: true,
         isContribute: false,
     },
-    {
-        id: 'luna',
-        title: 'Luna MVP',
-        category: 'Blockchain Explorer for Transparent Transaction Monitoring',
-        img: require('@/assets/images/ui-project-3.jpg'),
-        skate: require('@/assets/icons/bpi.svg'),
-        client: require('@/assets/icons/costco.svg'),
-        isFeature: false,
-        isContribute: false,
-    },
+    // {
+    //     id: 'luna',
+    //     title: 'Luna MVP',
+    //     category: 'Blockchain Explorer for Transparent Transaction Monitoring',
+    //     img: require('@/assets/images/ui-project-3.jpg'),
+    //     skate: require('@/assets/icons/bpi.svg'),
+    //     client: require('@/assets/icons/costco.svg'),
+    //     isFeature: false,
+    //     isContribute: false,
+    // },
     {
         id: 'costco-wholesale',
         title: 'Diversity Dashboard; Warehouse Factsheet',
@@ -62,16 +62,16 @@ const projects = [
         isFeature: false,
         isContribute: true,
     },
-    {
-        id: 'workshop',
-        title: 'Internal workshop',
-        category: 'Holistic Design for digital products in the right time description',
-        img: require('@/assets/images/ui-project-3.jpg'),
-        skate: require('@/assets/icons/bpi.svg'),
-        client: require('@/assets/icons/costco.svg'),
-        isFeature: false,
-        isContribute: true,
-    }
+    // {
+    //     id: 'workshop',
+    //     title: 'Internal workshop',
+    //     category: 'Holistic Design for digital products in the right time description',
+    //     img: require('@/assets/images/ui-project-3.jpg'),
+    //     skate: require('@/assets/icons/bpi.svg'),
+    //     client: require('@/assets/icons/costco.svg'),
+    //     isFeature: false,
+    //     isContribute: true,
+    // }
 ];
 
 export default projects;

@@ -13,7 +13,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20.9.0'  # Use whatever node version your project requires
+          node-version: '20'  # Use whatever node version your project requires
 
       - name: Install Dependencies
         run: yarn install

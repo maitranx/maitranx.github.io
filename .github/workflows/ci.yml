@@ -21,7 +21,7 @@ jobs:
       - name: Build Project
         run: yarn build  # Use the correct build command for your project. It may include 'dist' as part of the script in your package.json.
       - name: Build and Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.4.3
+        uses: JamesIves/github-pages-deploy-action@v4.5.0
         with:
           branch: page # The branch the action should deploy to.
           folder: dist # The folder the action should deploy.

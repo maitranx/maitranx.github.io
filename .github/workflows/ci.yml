@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2 # This action checks out your repository
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: '20.9.0'  # Use whatever node version your project requires
 

@@ -9,20 +9,23 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4 # This action checks out your repository
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3  # Update to the latest version that supports Node.js 20
         with:
-          node-version: '20'  # Use whatever node version your project requires
+          node-version: '20'
 
       - name: Install Dependencies
         run: yarn install
 
       - name: Build Project
-        run: yarn build  # Use the correct build command for your project. It may include 'dist' as part of the script in your package.json.
+        run: yarn build
+
       - name: Build and Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.4.3
+        uses: JamesIves/github-pages-deploy-action@v5  # Update to the latest version that supports Node.js 20
         with:
-          branch: page # The branch the action should deploy to.
-          folder: dist # The folder the action should deploy.
-          # You can specify additional configuration here as needed.
+          branch: page
+          folder: dist
+          # Additional configuration as needed

@@ -24,7 +24,7 @@ jobs:
         run: yarn build
 
       - name: Build and Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.4.3  # Use the latest version available
+        uses: JamesIves/github-pages-deploy-action@v4  # Use the latest version available
         with:
           branch: page
           folder: dist

@@ -15,7 +15,7 @@ export const socialLinks = [
 		id: 3,
 		name: 'Dribbble',
 		icon: 'dribbble',
-		url: 'https://dribbble.com',
+		url: 'https://dribbble.com/maitranx',
 	},
 	{
 		id: 4,

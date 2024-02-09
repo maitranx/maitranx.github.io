@@ -21,6 +21,6 @@ export const socialLinks = [
 		id: 4,
 		name: 'Behance',
 		icon: 'behance',
-		url: 'https://www.behance.net',
+		url: 'https://www.behance.net/xuanmai130852f',
 	}
 ];

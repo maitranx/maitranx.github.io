@@ -332,17 +332,43 @@
             </div>
         </div>
     </div>
+    <PasswordModal
+        :showModal="true"
+        :modal="modal"
+        aria-modal="View CV Modal"
+        @keyup.esc="$emit('close')"
+        @success="modal=false"
+	/>
 </template>
 <script>
 /* eslint-disable vue/no-unused-components */
 
 import { FigmaIcon, Web3Icon, PowerBI } from '@/components/icons';
+import PasswordModal from '../shared/PasswordModal.vue';
 export default {
     name: 'AuraScanProject',
     components: {
         FigmaIcon,
         Web3Icon,
         PowerBI,
+        PasswordModal
     },
+    data: () => {
+		return {
+			modal: false
+		};
+	},
+    mounted() {
+        if (this.modal) {
+            // Stop screen scrolling
+            document.getElementById("key").value='';
+            document.getElementById("error").innerHTML = "";
+            this.modal = false;
+        } else {
+            document.getElementById('key').value='';
+            document.getElementById('error').innerHTML = "";
+            this.modal = true;
+        }
+	},
 };
 </script>

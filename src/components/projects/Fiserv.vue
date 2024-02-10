@@ -1,10 +1,9 @@
 <script>
-import { PowerBI, Sketch } from '@/components/icons';
+import { Sketch } from '@/components/icons';
 
 export default {
     name: 'Fiserv',
     components: {
-        PowerBI,
         Sketch,
     },
 };
@@ -28,7 +27,6 @@ export default {
                             <div class="flex items-center gap-4 pr-6 border-r border-neutral-500">
                                 <div class="text-white text-xs font-semibold font-inter uppercase leading-none">Stake</div>
                                 <Sketch />
-                                <PowerBI />
                             </div>
                             <div class="flex items-center gap-4">
                                 <div class="text-white text-xs font-semibold font-inter uppercase leading-none">Client</div>

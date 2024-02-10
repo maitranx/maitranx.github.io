@@ -212,7 +212,7 @@ export default {
         </div>
 
         <!-- Single project right section details -->
-        <div class="flex justify-center py-24">
+        <div class="flex justify-center pt-24">
             <div class="w-full px-24">
                 <div
                     class="pt-24 pb-20 bg-gradient-to-r from-lime-500 via-green-500 to-teal-600 rounded-3xl flex-col justify-center items-center gap-8"
@@ -226,7 +226,15 @@ export default {
                             <span class="text-4xl font-bold">Building smart components</span>
                         </div>
                         <div class="h-12 px-6 py-2.5 bg-gray-900 rounded-xl justify-center items-center gap-4 inline-flex mt-8">
-                            <div class="text-center text-brand text-2xl font-semibold leading-loose">Dive in Now</div>
+                                <router-link
+                                    to="/blogs/Building-smart-components-in-Figma"
+                                    aria-label="Blogs"
+                                    class="text-center text-brand text-2xl font-semibold leading-loose"
+                                >
+                                    <Button title="Dive in Now" class="italic underline" />
+                                    Dive in Now
+                                </router-link
+                                >
                         </div>
                     </div>
                 </div>

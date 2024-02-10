@@ -4,12 +4,14 @@ import { usePiniaStore } from '@/stores/piniaStore';
 import ProjectHeader from '../components/projects/ProjectHeader.vue';
 import ProjectRelatedProjects from '../components/projects/ProjectRelatedProjects.vue';
 import projectdetails from '../data/projectdetails';
+import Button from '../components/reusable/Button.vue';
 
 export default {
     name: 'SingleProject',
     components: {
         ProjectHeader,
         ProjectRelatedProjects,
+        Button,
     },
     data: () => ({
         component: null,
@@ -43,6 +45,17 @@ export default {
         <!-- Project Detail -->
         <component :is="component"></component>
         <!-- Project related projects -->
+
+        <div class="flex justify-center items-center p-12 xl:flex">
+            <router-link
+                to="/works"
+                class="font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg focus:ring-1 focus:ring-indigo-900 text-white text-lg xl:text-xl duration-300 hover:text-sky-300"
+                aria-label="More Projects"
+            >
+                <Button title="Browse more works" class="italic underline" />
+                <img src="@/assets/icons/arrow-right.svg" class="w-8 ml-4" alt="Arrow Right icon" />
+            </router-link>
+        </div>
     </div>
 </template>
 

@@ -38,7 +38,7 @@ const projects = [
         category: 'UX design for Power BI Dashboard for a multi-billion dollar global retailer',
         img: require('@/assets/images/ui-project-3.jpg'),
         skate: require('@/assets/icons/bpi.svg'),
-        client: require('@/assets/icons/fiserv.svg'),
+        client: require('@/assets/icons/costco.svg'),
         isFeature: true,
         isContribute: false,
     },

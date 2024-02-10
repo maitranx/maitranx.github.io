@@ -22,7 +22,7 @@ export default {
     <section class="">
         <div>
             <h6 class="font-general-regular text-center text-secondary-dark dark:text-ternary-light text-md xl:text-xl font-normal mb-8"> {{ title }}</h6>
-            <h3 class="font-general-regular text-center text-secondary-dark dark:text-ternary-light text-5xl xl:text-5xl font-semibold mb-4">
+            <h3 class="font-general-regular text-center text-secondary-dark dark:text-ternary-light text-5xl xl:text-5xl font-medium mb-4">
                 {{category}}
             </h3>
             <div class="flex justify-between pb-3 gap-2">

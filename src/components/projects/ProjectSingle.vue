@@ -18,7 +18,7 @@ export default {
                 </p>
                 <span class="font-general-regular text-sm text-ternary-dark dark:text-ternary-light">{{ project.category }}</span>
             </div>
-            <div class="px-4 py-6 border-t border-b border-neutral-500 justify-start items-center">
+            <div class="px-4 py-6 border-t border-b border-neutral-700 justify-start items-center">
                 <div class="flex justify-between items-center">
                     <div class="flex items-center">
                         <div class="text-sm text-ternary-dark dark:text-ternary-light">Stake</div>
@@ -28,7 +28,7 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="border-neutral-500 justify-end items-center px-4 py-6">
+            <div class="justify-end items-center px-4 py-6">
                 <div class="flex justify-between items-center">
                     <div class="flex items-center">
                         <div class="text-sm text-ternary-dark dark:text-ternary-light">Client</div>

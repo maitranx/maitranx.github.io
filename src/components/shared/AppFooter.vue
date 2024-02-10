@@ -20,7 +20,7 @@ export default {
 </script>
 
 <template>
-    <div class="xl:px-[168px] pt-6 xl:pb-17 px-6 pb-6 border-t border-primary-light border-dashed dark:border-neutral-500">
+    <div class="xl:px-[168px] pt-6 mt-20 xl:pb-17 px-6 pb-6 border-t border-primary-light border-dashed dark:border-neutral-500">
         <div class="flex flex-col xl:flex-row justify-between">
             <div>
                 <router-link to="/">
@@ -28,8 +28,8 @@ export default {
                 </router-link>
                 <!-- Footer social links -->
                 <div class="flex flex-col xl:flex-row mt-6 xl:items-center">
-                    <div class="hidden xl:block font-normal text-base xl:text-base text-primary-dark dark:text-primary-light">My socials</div>
-                    <ul class="xl:ml-8 flex flex-row gap-3 xl:gap-8 text-lg xl:text-xl text-white">
+                    <div class="hidden xl:block font-normal text-sm xl:text-sm text-neutral-400">My socials</div>
+                    <ul class="xl:ml-8 flex flex-row gap-3 xl:gap-8 text-sm xl:text-sm text-gray-500">
                         <a
                             v-for="social in socials"
                             :key="social.id"
@@ -42,14 +42,14 @@ export default {
                     </ul>
                 </div>
             </div>
-            <div class="flex flex-col text-left bg-slate-900 font-general-normal p-5 rounded-xl mt-6 xl:mt-0">
+            <div class="flex flex-col text-left bg-slate-900 font-normal p-5 rounded-xl mt-6 xl:mt-0">
                 <div class="flex items-center mb-4">
                     <img src="@/assets/icons/phone.svg" alt="Phone icon" />
                     <div class="ml-4 text-base xl:text-2xl text-white">(+84) 78 444 3157</div>
                 </div>
                 <div class="flex items-center">
                     <img src="@/assets/icons/mail.svg" alt="Mail icon" />
-                    <div class="ml-4 text-base xl:text-2xl text-white font-general-normal">xuanmai1308@gmail.com</div>
+                    <div class="ml-4 text-base xl:text-2xl text-white font-normal">xuanmai1308@gmail.com</div>
                 </div>
             </div>
 

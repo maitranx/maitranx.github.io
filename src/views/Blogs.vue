@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-    <div class="px-4 px-4 md:px-[84px] xl:px-[168px] md:py-10 md:mt-10">
+    <div class="px-4 md:px-[84px] xl:px-[168px] md:mt-10">
         <div>
             <h3 class="font-general-regular text-left text-ternary-light text-5xl xl:text-5xl font-semibold mb-4">
                 Blogs

@@ -335,8 +335,7 @@
     <PasswordModal
         :showModal="true"
         :modal="modal"
-        aria-modal="View CV Modal"
-        @keyup.esc="$emit('close')"
+        aria-modal="View Password Modal"
         @success="modal=false"
 	/>
 </template>
@@ -361,10 +360,16 @@ export default {
     mounted() {
         if (this.modal) {
             // Stop screen scrolling
+            document
+					.getElementsByTagName('html')[0]
+					.classList.remove('overflow-y-hidden');
             document.getElementById("key").value='';
             document.getElementById("error").innerHTML = "";
             this.modal = false;
         } else {
+            document
+					.getElementsByTagName('html')[0]
+					.classList.remove('overflow-y-hidden');
             document.getElementById('key').value='';
             document.getElementById('error').innerHTML = "";
             this.modal = true;

@@ -1,6 +1,6 @@
 <script></script>
 <template>
-    <div class="px-[170px]">
+    <div class="px-[24px] md:px-[345px]">
         <div class="text-white">
             <div class="text-white text-2xl font-semibold leading-9 pb-6">Reasons to build smart components</div>
             <div class="text-white text-base font-normal leading-snug">
@@ -98,10 +98,7 @@
         </div>
         <div class="py-6 text-white text-xl font-semibold leading-normal">Closing thoughts</div>
             <div class="text-white text-base font-normal leading-snug">
-                In conclusion, designing a mobile view for the Power BI Dashboard requires careful consideration of user needs and optimal data
-                presentation. Prioritize key insights, ensure readability on smaller screens, and leverage interactive features to empower users on
-                the go. With a well-designed mobile view, users can access critical information and make data-driven decisions effortlessly, enhancing
-                the overall value of the Power BI Dashboard.
+                By leveraging the base component, component properties, and slots in Figma, you can create smart components that are reusable, customizable, and adaptable to different design needs. These concepts empower designers to build efficient and consistent design systems while providing users with the flexibility to tailor component instances to their specific requirements.
             </div>
     </div>
 </template>

@@ -265,6 +265,7 @@
                     /></swiper-slide>
                 </swiper>
             </div>
+            
         </div>
         <div class="px-4 py-12 relative bg-[url('@/assets/images/costco-wholesale/mobile/bg-4.png')] bg-cover">
             <div class="mt-12 text-[#C6EDFF] text-[20px] font-semibold leading-[25px]">Warehouse factsheet wireframe</div>

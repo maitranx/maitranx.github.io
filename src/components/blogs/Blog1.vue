@@ -1,6 +1,6 @@
 <script></script>
 <template>
-    <div class="px-[170px]">
+    <div class="px-[24px] md:px-[345px]">
         <div class="text-white">
             <div class="text-white text-2xl font-semibold leading-9 pb-6">Challenges and solutions</div>
             <div class="rounded-xl flex-col justify-start items-start gap-1 inline-flex">

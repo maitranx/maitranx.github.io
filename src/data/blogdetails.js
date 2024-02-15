@@ -5,6 +5,7 @@ const blogdetails = [
         component: import(/* webpackChunkName: "project-details" */ '@/components/blogs/Blog1.vue'),
         title: 'Design Dashboard mobile view in Power BI',
         time: 'Dec 12nd, 2023',
+        banner: require('@/assets/images/blog/blog-1/banner.png'),
         relatedBlog: {
             relatedProjectsHeading: 'Related Projects',
             relatedProjects: [
@@ -22,6 +23,7 @@ const blogdetails = [
         component: import(/* webpackChunkName: "project-details" */ '@/components/blogs/Blog2.vue'),
         title: 'Building smart components in Figma ',
         time: 'Dec 12nd, 2023',
+        banner: require('@/assets/images/blog/blog-2/banner.png'),
         relatedBlog: {
             relatedProjectsHeading: 'Related Projects',
             relatedProjects: [

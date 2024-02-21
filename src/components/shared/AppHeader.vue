@@ -75,7 +75,7 @@ export default {
         <!-- Header start -->
         <div class="z-10 max-w-screen-lg xl:max-w-screen-xl block xl:flex xl:justify-between xl:items-center">
             <!-- Header menu links and small screen hamburger menu -->
-            <div class="flex justify-between items-center px-4 xl:px-0">
+            <div class="flex justify-between items-center">
                 <!-- Header logos -->
                 <div>
                     <router-link to="/">

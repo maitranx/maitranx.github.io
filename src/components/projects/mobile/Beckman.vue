@@ -14,7 +14,7 @@ export default {
 };
 </script>
 <template>
-    <div class="h-[5167.95px] relative bg-black">
+    <div class="relative bg-black">
         <div class="bg-[url('@/assets/images/beckman/mobile/bg-1.png')] bg-cover py-[128px]">
             <div class="px-4 flex-col justify-end items-start gap-12 inline-flex">
                 <div class="self-stretch text-emerald-50 text-[32px] font-semibold font-['Poppins'] leading-[48px]">

@@ -39,6 +39,7 @@ const projectdetails = [
     {
         id: 'fiserv',
         component: import(/* webpackChunkName: "project-details" */ '@/components/projects/Fiserv.vue'),
+        componentMobile: import(/* webpackChunkName: "project-details" */ '@/components/projects/mobile/Fiserv.vue'),
         name: 'fiserv',
         title: '<p><span class="font-semibold">Global fintech products</span> for banking</p>',
         relatedProject: {

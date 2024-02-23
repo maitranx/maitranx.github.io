@@ -58,7 +58,7 @@ export default {
                             <div class="flex gap-6">
                                 <div class="flex items-center gap-4 pr-6 border-r border-neutral-500">
                                     <div class="text-white text-xs font-semibold font-inter uppercase leading-none">Stake</div>
-                                    <FigmaIcon />
+                                    <FigmaIcon/>
                                     <Web3Icon />
                                 </div>
                                 <div class="flex items-center gap-4">

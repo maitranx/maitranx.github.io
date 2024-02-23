@@ -7,25 +7,24 @@ export default {
 <template>
     <!-- Header links -->
     <div :class="isOpen ? 'block' : 'hidden'"
-        class="z-50 m-0 md:ml-4 mt-5 md:mt-3 md:flex p-5 md:p-0 justify-center items-center shadow-lg md:shadow-none">
-        <router-link to="/works" aria-label="Projects" v-slot="{ isActive }">
-            <span
-                class="font-general-medium block text-left text-lg font-medium  hover:text-cyan-600 dark:hover:text-cyan-300 md:mx-4 mb-2 md:py-2"
-                :class="{ 'text-primary-light dark:text-ternary-light': !isActive, 'dark:text-cyan-300 text-cyan-600': isActive }">
-                Works
-            </span>
+        class="text-primary-light dark:text-ternary-light z-50 m-0 md:ml-4 mt-5 md:mt-3 md:flex p-5 md:p-0 justify-center items-center shadow-lg md:shadow-none">
+        <router-link to="/works" aria-label="Works"
+            class="font-general-medium block text-left text-lg font-medium  hover:text-cyan-600 dark:hover:text-cyan-300 md:mx-4 mb-2 md:py-2"
+            :class="{ 'dark:text-cyan-300 text-cyan-600': $route.path.includes('/works') }">
+
+            <span>Works </span>
         </router-link>
-        <router-link to="/blogs" v-slot="{ isActive }" aria-label="Blogs">
+        <router-link to="/blogs" aria-label="Blogs">
             <span
                 class="font-general-medium block text-left text-lg font-medium  hover:text-cyan-600 dark:hover:text-cyan-300 md:mx-4 mb-2 md:py-2"
-                :class="{ 'text-primary-light dark:text-ternary-light': !isActive, 'dark:text-cyan-300 text-cyan-600': isActive }">
+                :class="{ 'dark:text-cyan-300 text-cyan-600': $route.path.includes('/blogs') }">
                 Blogs
             </span>
         </router-link>
-        <router-link to="/about" aria-label="About Me" v-slot="{ isActive }">
+        <router-link to="/about" aria-label="About Me">
             <span
                 class="font-general-medium block text-left text-lg font-medium  hover:text-cyan-600 dark:hover:text-cyan-300 md:mx-4 mb-2 md:py-2"
-                :class="{ 'text-primary-light dark:text-ternary-light': !isActive, 'dark:text-cyan-300 text-cyan-600': isActive }">
+                :class="{ 'dark:text-cyan-300 text-cyan-600': $route.path.includes('/about') }">
                 About Me
             </span>
         </router-link>

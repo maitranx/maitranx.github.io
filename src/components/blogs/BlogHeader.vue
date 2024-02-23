@@ -16,7 +16,7 @@ export default {
                my blog
             </div>
             <div class="px-[24px] md:px-[345px] self-stretch text-center text-white text-5xl font-semibold leading-[72px]" v-html="blog.title"></div>
-            <div class="w-40 h-8 bg-[#082F49] rounded-lg border border-cyan-900 justify-center items-center gap-2 inline-flex">
+            <div class="w-36 h-8 bg-[#082F49] rounded-lg border border-cyan-900 justify-center items-center gap-2 inline-flex">
                 <img src="@/assets/images/blog/calendar.svg" alt="calendar" />
                 <div class="text-center text-cyan-200 text-base font-semibold font-['Poppins'] leading-tight">{{ blog.time }}</div>
             </div>

@@ -42,7 +42,7 @@ export default {
                     </ul>
                 </div>
             </div>
-            <div class="flex flex-col text-left bg-slate-900 font-normal p-5 rounded-xl mt-6 xl:mt-0">
+            <div class="flex flex-col text-left bg-[#0F172A] font-normal p-5 rounded-xl mt-6 xl:mt-0">
                 <div class="flex items-center mb-4">
                     <img src="@/assets/icons/phone.svg" alt="Phone icon" />
                     <div class="ml-4 text-base xl:text-2xl text-white">(+84) 78 444 3157</div>

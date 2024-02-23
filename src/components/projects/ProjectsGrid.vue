@@ -30,7 +30,7 @@ export default {
         </div>
 
         <!-- Projects grid -->
-        <div class="grid grid-cols-1 xl:grid-cols-2 xl:grid-cols-3 mt-6 xl:gap-10 mb-4">
+        <div class="grid grid-cols-1 xl:grid-cols-3 mt-6 xl:gap-10 mb-4">
             <ProjectSingle v-for="project in projectList" :key="project.id" :project="project" />
         </div>
     </section>

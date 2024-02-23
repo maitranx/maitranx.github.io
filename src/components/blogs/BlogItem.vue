@@ -11,18 +11,18 @@ export default {
         aria-label="Blog item"
     >
         <img :src="blog.img" :alt="blog.title" class="rounded-t-xl border-none" />
-        <div class="grid grid-rows-[min-content_1fr_min-content] gap-3 p-6 flex-1">
+        <div class="p-6">
             <div class="text-left">
                 <p class="font-general-semibold text-xl text-ternary-light font-semibold mb-2">
                     {{ blog.title }}
                 </p>
             </div>
-            <div>
+            <div class="mt-3">
                 <span class="font-general-regular text-sm text-neutral-50">{{ blog.desc }}</span>
             </div>
-            <div class="w-40 h-8 bg-[#082F49] rounded-lg border border-cyan-900 justify-center items-center gap-2 inline-flex">
+            <div class="mt-3 px-2 py-[10px] bg-[#082F49] rounded-lg border border-cyan-900 justify-center items-center gap-2 inline-flex flex-1">
                 <img src="@/assets/images/blog/calendar.svg" alt="calendar" />
-                <div class="text-center text-sky-300 text-sm font-normal leading-[17.50px] tracking-tight">{{ blog.time }}</div>
+                <div class="text-center text-sky-300 text-sm font-normal font-['Poppins'] leading-none tracking-tight">{{ blog.time }}</div>
             </div>
         </div>
     </router-link>

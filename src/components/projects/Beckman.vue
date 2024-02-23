@@ -12,45 +12,39 @@ export default {
 <template>
     <div>
         <!-- Hero banner -->
-        <div class="relative bg-[url('@/assets/images/beckman/section-1.png')] bg-cover h-0 pb-[calc(858/1440*100%)]">
-            <div class="absolute inset-0 h-full">
-                <div class="h-full max-w-[calc(1001/1440*100%)] px-[168px] pb-[168px] flex flex-col justify-end gap-[50px]">
-                    <div class="text-[#E6F4F2] text-[56px] font-semiboldleading-[70px]">
-                        <div>Medical device</div>
-                        <div>User Experience Design</div>
+        <div class="p-20 xl:p-[168px] pt-[40] xl:pt-[335px] bg-[url('@/assets/images/beckman/section-1.png')] bg-cover bg-no-repeat">
+            <div class="flex flex-col justify-end gap-[50px] xl:max-w-[60%]">
+                <div class="text-[#E6F4F2] text-[56px] font-semiboldleading-[70px]">
+                    <div>Medical device</div>
+                    <div>User Experience Design</div>
+                </div>
+                <div>
+                    <span class="text-white text-lg font-normal"> My approach for bidding on a design project is centered around utilizing the </span>
+                    <span class="text-[#6EC1C4] text-lg font-normal">User-Centered Design</span>
+                    <span class="text-white text-lg font-normal">
+                        (UCD) methodology to create designs that are focused on the needs and preferences of the users.
+                    </span>
+                </div>
+                <div class="text-white flex items-center">
+                    <div class="text-xs font-semibold font-['Inter'] uppercase leading-[15px]">Stake</div>
+                    <div class="ml-2">
+                        <HMI />
                     </div>
-                    <div>
-                        <span class="text-white text-lg font-normal">
-                            My approach for bidding on a design project is centered around utilizing the
-                        </span>
-                        <span class="text-[#6EC1C4] text-lg font-normal">User-Centered Design</span>
-                        <span class="text-white text-lg font-normal">
-                            (UCD) methodology to create designs that are focused on the needs and preferences of the users.
-                        </span>
+                    <div class="ml-4">
+                        <PowerBI />
                     </div>
-                    <div class="text-white flex items-center">
-                        <div class="text-xs font-semibold font-['Inter'] uppercase leading-[15px]">Stake</div>
-                        <div class="ml-2">
-                            <HMI />
-                        </div>
-                        <div class="ml-4">
-                            <PowerBI />
-                        </div>
-                        <div class="h-[27px] border border-[#6D6D6D] mx-6"></div>
-                        <div class="items-center gap-2 flex flex-nowrap">
-                            <div class="text-xs font-semibold font-['Inter'] uppercase leading-[15px]">Client</div>
-                            <div class="text-xs font-semibold font-['Poppins'] leading-[15px]">
-                                a global leader in biomedical technology, US based
-                            </div>
-                        </div>
+                    <div class="h-[27px] border border-[#6D6D6D] mx-6"></div>
+                    <div class="items-center gap-2 flex flex-nowrap">
+                        <div class="text-xs font-semibold font-['Inter'] uppercase leading-[15px]">Client</div>
+                        <div class="text-xs font-semibold font-['Poppins'] leading-[15px]">a global leader in biomedical technology, US based</div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- End Hero banner -->
         <!-- Card Services -->
-        <div class="bg-gray-50">
-            <div class="flex flex-col items-start h-full p-[168px] pb-0">
+        <div class="p-20 xl:p-[168px] bg-gray-50">
+            <div class="flex flex-col items-start h-full pb-0">
                 <div class="text-gray-800 text-5xl font-semibold leading-10">Main User</div>
                 <div class="text-neutral-900 text-lg font-normal py-6">
                     The "Day in the Life" method is a user research technique that involves observing users in their natural environments to
@@ -61,7 +55,7 @@ export default {
                     </div>
                 </div>
                 <div class="flex flex-col pt-6 w-full justify-start items-start gap-8">
-                    <div class="relative pl-[158px]">
+                    <div class="relative xl:pl-[158px]">
                         <div class="absolute">
                             <img src="@/assets/images/beckman/circle.png" alt="pill" />
                         </div>
@@ -75,7 +69,7 @@ export default {
                             </div>
                         </div>
                     </div>
-                    <div class="relative pl-[347px] h-[316px]">
+                    <div class="relative xl:pl-[347px] h-[316px]">
                         <div class="absolute">
                             <img src="@/assets/images/beckman/circle-large.png" alt="pill" />
                         </div>
@@ -96,42 +90,39 @@ export default {
         </div>
         <!-- End Main User -->
         <!-- Responsibilites -->
-        <div class="bg-[url('@/assets/images/beckman/section-3.png')] bg-cover h-0 relative pb-[calc(1790/2160*100%)]">
-            <div class="absolute inset-0 h-full">
-                <div class="flex flex-col px-[168px] h-full">
-                    <div class="mt-[calc(323/1193*100%)] text-gray-800 text-5xl font-semibold leading-10">The proposal</div>
-                    <div class="text-neutral-900 text-lg font-normal py-8">
-                        <ul class="list-disc ml-4">
-                            <li>UX Research & Design</li>
-                            <li>UI Design</li>
-                            <li>Design guideline</li>
-                        </ul>
+        <div class="p-20 xl:p-[168px] xl:pt-[335px] bg-[url('@/assets/images/beckman/section-3.png')] bg-cover -mt-2">
+            <div class="flex flex-col h-full">
+                <div class="text-gray-800 text-5xl font-semibold leading-10">The proposal</div>
+                <div class="text-neutral-900 text-lg font-normal py-8">
+                    <ul class="list-disc ml-4">
+                        <li>UX Research & Design</li>
+                        <li>UI Design</li>
+                        <li>Design guideline</li>
+                    </ul>
+                </div>
+                <div class="text-neutral-900 text-lg font-normal">
+                    I followed a structured process that involves extensive user research, market research. This helps me gain deep insights into the
+                    users' behaviors, motivations, and pain points, which in turn informs the design decisions I make. Below is a bit of my research
+                </div>
+                <div class="grid grid-cols-2 gap-8 pt-8">
+                    <div>
+                        <div class="text-black text-lg font-semibold pb-5">Large input/text style/touch target size</div>
+                        <img src="@/assets/images/beckman/s3-content-1.svg" alt="content" />
                     </div>
-                    <div class="text-neutral-900 text-lg font-normal">
-                        I followed a structured process that involves extensive user research, market research. This helps me gain deep insights into
-                        the users' behaviors, motivations, and pain points, which in turn informs the design decisions I make. Below is a bit of my
-                        research
+                    <div class="ml-auto">
+                        <div class="text-black text-lg font-semibold pb-5">Icon driven</div>
+                        <img src="@/assets/images/beckman/s3-content-2.svg" alt="content" />
                     </div>
-                    <div class="grid grid-cols-2 gap-8 pt-8">
-                        <div>
-                            <div class="text-black text-lg font-semibold pb-5">Large input/text style/touch target size</div>
-                            <img src="@/assets/images/beckman/s3-content-1.svg" alt="content" />
-                        </div>
-                        <div class="ml-auto">
-                            <div class="text-black text-lg font-semibold pb-5">Icon driven</div>
-                            <img src="@/assets/images/beckman/s3-content-2.svg" alt="content" />
-                        </div>
-                        <div>
-                            <div class="pt-8 text-black text-lg font-semibold pb-5">Card based selectors</div>
-                            <img src="@/assets/images/beckman/s3-content-3.svg" alt="content" />
-                        </div>
+                    <div>
+                        <div class="pt-8 text-black text-lg font-semibold pb-5">Card based selectors</div>
+                        <img src="@/assets/images/beckman/s3-content-3.svg" alt="content" />
                     </div>
                 </div>
             </div>
         </div>
         <!-- End Responsibilites -->
         <!-- Mockup -->
-        <div class="bg-zinc-200 p-[168px] pb-0">
+        <div class="bg-zinc-200 p-20 xl:p-[168px] pb-0">
             <div class="text-gray-800 text-5xl font-semibold leading-10">Mockups</div>
             <div class="grid grid-cols-2 gap-10 pt-10">
                 <div class="text-gray-800 text-2xl font-semibold font-['Poppins'] leading-loose">
@@ -146,7 +137,7 @@ export default {
         </div>
         <!-- End Mockup -->
         <!-- Outcomes -->
-        <div class="bg-neutral-900 p-[168px]">
+        <div class="bg-neutral-900 p-20 xl:p-[168px]">
             <div class="text-emerald-50 text-6xl font-semibold">Outcomes</div>
             <div class="grid grid-rows-3 gap-10 pt-[60px]">
                 <img src="@/assets/images/beckman/oc-1.png" class="w-full" />

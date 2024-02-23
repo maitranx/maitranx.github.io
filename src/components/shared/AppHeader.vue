@@ -73,7 +73,7 @@ export default {
 <template>
     <nav id="nav" class="px-4 md:px-[84px] xl:px-[168px] py-4 md:py-6">
         <!-- Header start -->
-        <div class="z-10 max-w-screen-lg xl:max-w-screen-xl block xl:flex xl:justify-between xl:items-center">
+        <div class="z-10 block md:flex md:justify-between md:items-center">
             <!-- Header menu links and small screen hamburger menu -->
             <div class="flex justify-between items-center">
                 <!-- Header logos -->
@@ -83,32 +83,17 @@ export default {
                     </router-link>
                 </div>
 
-                <!-- Theme switcher small screen -->
-                <!-- <theme-switcher
-					:theme="theme"
-					@themeChanged="updateTheme"
-					class="block xl:hidden bg-ternary-light dark:bg-ternary-dark hover:bg-hover-light dark:hover:bg-hover-dark hover:shadow-sm px-2.5 py-2 rounded-lg"
-				/> -->
-
                 <!-- Small screen hamburger menu -->
-                <div class="xl:hidden">
+                <div class="md:hidden">
                     <button @click="isOpen = !isOpen" type="button" class="focus:outline-none" aria-label="Hamburger Menu">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            class="h-7 w-7 fill-current text-secondary-dark dark:text-ternary-light"
-                        >
-                            <path
-                                v-if="isOpen"
-                                fill-rule="evenodd"
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            class="h-7 w-7 fill-current text-secondary-dark dark:text-ternary-light">
+                            <path v-if="isOpen" fill-rule="evenodd"
                                 d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-                                clip-rule="evenodd"
-                            ></path>
-                            <path
-                                v-if="!isOpen"
-                                fill-rule="evenodd"
-                                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                            ></path>
+                                clip-rule="evenodd"></path>
+                            <path v-if="!isOpen" fill-rule="evenodd"
+                                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+                            </path>
                         </svg>
                     </button>
                 </div>
@@ -117,24 +102,8 @@ export default {
             <!-- Header links -->
 
             <!-- Header right section buttons -->
-            <div class="hidden xl:flex justify-between items-center flex-col md:flex-row">
+            <div class="hidden md:flex justify-between items-center flex-col md:flex-row">
                 <AppHeaderLinks :showModal="showModal" :isOpen="isOpen" />
-                <!-- Hire me button -->
-                <!-- <div class="hidden md:block">
-					<Button
-						title="Hire Me"
-						class="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
-						@click="showModal()"
-						aria-label="Hire Me Button"
-					/>
-				</div> -->
-
-                <!-- Theme switcher large screen -->
-                <!-- <theme-switcher
-					:theme="theme"
-					@themeChanged="updateTheme"
-					class="ml-8 bg-primary-light dark:bg-ternary-dark px-3 py-2 shadow-sm rounded-xl cursor-pointer"
-				/> -->
             </div>
         </div>
 

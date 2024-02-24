@@ -71,7 +71,7 @@ export default {
 </script>
 
 <template>
-    <nav id="nav" class="px-4 md:px-[84px] xl:px-[168px] py-4 md:py-6">
+    <nav id="nav" class="relative px-4 md:px-[84px] xl:px-[168px] py-4 md:py-6">
         <!-- Header start -->
         <div class="z-10 block md:flex md:justify-between md:items-center">
             <!-- Header menu links and small screen hamburger menu -->
@@ -86,16 +86,35 @@ export default {
                 <!-- Small screen hamburger menu -->
                 <div class="md:hidden">
                     <button @click="isOpen = !isOpen" type="button" class="focus:outline-none" aria-label="Hamburger Menu">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                            class="h-7 w-7 fill-current text-secondary-dark dark:text-ternary-light">
-                            <path v-if="isOpen" fill-rule="evenodd"
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            class="h-7 w-7 fill-current text-secondary-dark dark:text-ternary-light"
+                        >
+                            <path
+                                v-if="isOpen"
+                                fill-rule="evenodd"
                                 d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-                                clip-rule="evenodd"></path>
-                            <path v-if="!isOpen" fill-rule="evenodd"
-                                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
-                            </path>
+                                clip-rule="evenodd"
+                            ></path>
+                            <path
+                                v-if="!isOpen"
+                                fill-rule="evenodd"
+                                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                            ></path>
                         </svg>
                     </button>
+                    <!-- <div class="absolute left-0 flex-col justify-start items-start inline-flex">
+                        <div class="p-6 justify-center items-center gap-2.5 inline-flex">
+                            <div class="text-white text-xl font-normal font-['Poppins'] leading-[30px]">Works</div>
+                        </div>
+                        <div class="p-6 justify-center items-center gap-2.5 inline-flex">
+                            <div class="text-white text-xl font-normal font-['Poppins'] leading-[30px]">Blogs</div>
+                        </div>
+                        <div class="p-6 justify-center items-center gap-2.5 inline-flex">
+                            <div class="text-white text-xl font-normal font-['Poppins'] leading-[30px]">About me</div>
+                        </div>
+                    </div> -->
                 </div>
             </div>
 

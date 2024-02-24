@@ -40,7 +40,7 @@ export default {
         <ProjectsGrid v-if="!isSmallScreen" title="my work" category="Scalable ecosystem products" :projectList="filteredProjects" />
 
         <!-- Load more projects button -->
-        <div class="flex justify-center items-center mb-20 xl:flex">
+        <div v-if="!isSmallScreen" class="flex justify-center items-center mb-20 xl:flex">
             <router-link
                 to="/works"
                 class="font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg focus:ring-1 focus:ring-indigo-900 text-white text-lg xl:text-xl duration-300 hover:text-cyan-300"

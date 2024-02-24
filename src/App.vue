@@ -34,7 +34,9 @@ export default {
 </script>
 
 <template>
-    <div :class="appTheme">
+    <div :class="appTheme" class="relative overflow-x-hidden">
+        <img src="@/assets/images/blur-indigo-1.png" class="absolute z-[-1] top-[-50px] md:top-[-200px] right-[-20px] md:right-[-100px]" />
+
         <!-- App header -->
         <AppHeader />
 

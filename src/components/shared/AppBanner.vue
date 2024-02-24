@@ -62,7 +62,7 @@ export default {
                         <div
                             class="flex justify-center items-center xl:mb-0 text-lg bg-gradient-to-r from-indigo-200 from-[0%] to-sky-400 to-100% w-36 xl:w-48 mb-6 rounded-xl p-0.5 cursor-pointer"
                         >
-                            <div class="flex justify-center w-full bg-primary-dark hover:bg-slate-700 text-white rounded-xl p-2.5">
+                            <div class="flex justify-center w-full bg-primary-dark hover:bg-slate-700 text-white rounded-xl p-2.5 duration-500">
                                 <img src="@/assets/icons/work.svg" class="w-8" alt="Work icon" />
                                 <span class="text-xl xl:text-2xl font-medium duration-100 ml-4">Works </span>
                             </div>

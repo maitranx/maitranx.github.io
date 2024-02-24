@@ -9,8 +9,8 @@ export default {
 };
 </script>
 <template>
-    <div>
-        <img class="relative rounded-2xl px-4 md:px-[84px] xl:px-[168px]" :src="blog.banner" />
+    <div class="xl:mt-20">
+        <img class="relative rounded-2xl px-4 md:px-[84px] xl:px-[168px] w-full" :src="blog.banner" />
         <div class="text-center text-3xl xl:text-4xl text-primary-dark dark:text-primary-light mt-14 xl:mt-20 mb-20">
             <div class="font-general-regular text-center text-secondary-dark dark:text-neutral-50 text-md xl:text-xl font-n italic mb-8">my blog</div>
             <div class="px-[24px] md:px-[345px] self-stretch text-center text-white text-5xl font-semibold leading-[72px]" v-html="blog.title"></div>

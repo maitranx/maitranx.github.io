@@ -51,10 +51,18 @@ export default {
                 <div class="flex flex-col xl:flex-row items-center">
                     <!-- Works -->
                     <router-link to="/works">
-                        <div
-                            class="flex justify-center items-center xl:w-40 w-40 xl:mb-0 text-lg bg-gradient-to-r from-indigo-200 from-10% to-sky-300 to-10% w-36 xl:w-48 mb-6 rounded-xl p-0.5 cursor-pointer hover:bg-cyan-300"
+                        <!-- <div
+                            class="flex justify-center items-center xl:w-40 w-40 xl:mb-0 text-lg bg-gradient-to-r from-indigo-200 from-10% to-sky-300 to-10% hover:bg-slate-700 w-36 xl:w-48 mb-6 rounded-xl p-0.5 cursor-pointer"
                         >
                             <div class="flex justify-center w-full bg-primary-dark text-white rounded-xl p-2.5">
+                                <img src="@/assets/icons/work.svg" class="w-8" alt="Work icon" />
+                                <span class="text-xl xl:text-2xl font-medium duration-100 ml-4">Works </span>
+                            </div>
+                        </div> -->
+                        <div
+                            class="flex justify-center items-center xl:mb-0 text-lg bg-gradient-to-r from-indigo-200 from-[0%] to-sky-400 to-100% w-36 xl:w-48 mb-6 rounded-xl p-0.5 cursor-pointer"
+                        >
+                            <div class="flex justify-center w-full bg-primary-dark hover:bg-slate-700 text-white rounded-xl p-2.5">
                                 <img src="@/assets/icons/work.svg" class="w-8" alt="Work icon" />
                                 <span class="text-xl xl:text-2xl font-medium duration-100 ml-4">Works </span>
                             </div>
@@ -63,7 +71,7 @@ export default {
                     <!-- Blogs -->
                     <router-link to="/blogs">
                         <div
-                            class="flex xl:ml-5 justify-center items-center xl:w-40 w-40 mb-6 xl:mb-0 text-lg bg-slate-800 py-2.5 xl:py-3 rounded-xl focus:ring-1 focus:ring-cyan-300 hover:bg-cyan-300 cursor-pointer text-white hover:text-white duration-500"
+                            class="flex xl:ml-5 justify-center items-center xl:w-40 w-40 mb-6 xl:mb-0 text-lg bg-slate-800 py-2.5 xl:py-3 rounded-xl hover:bg-slate-700 cursor-pointer text-white hover:text-white duration-500"
                         >
                             <img src="@/assets/icons/blogs.svg" class="w-8" alt="Blog icon" />
                             <span class="text-xl xl:text-2xl font-medium duration-10 ml-4">Blogs</span>
@@ -72,7 +80,7 @@ export default {
                     <!-- About me -->
                     <router-link to="/about">
                         <div
-                            class="flex xl:ml-5 justify-center items-center xl:w-48 w-48 mb-6 xl:mb-0 text-lg bg-slate-800 py-2.5 xl:py-3 rounded-xl focus:ring-1 focus:ring-cyan-300 hover:bg-cyan-300 cursor-pointer text-white hover:text-white duration-500"
+                            class="flex xl:ml-5 justify-center items-center xl:w-48 w-48 mb-6 xl:mb-0 text-lg bg-slate-800 py-2.5 xl:py-3 rounded-xl focus:ring-1 hover:bg-slate-700 cursor-pointer text-white hover:text-white duration-500"
                         >
                             <img src="@/assets/icons/about.svg" class="w-8" alt="About icon" />
                             <span class="text-xl xl:text-2xl font-medium duration-100 ml-4">About me</span>

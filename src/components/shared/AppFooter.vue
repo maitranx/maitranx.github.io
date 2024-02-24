@@ -23,7 +23,7 @@ export default {
     <div class="xl:px-[168px] pt-6 xl:pb-17 px-6 pb-6 border-t border-primary-light border-dashed dark:border-neutral-500">
         <div class="flex flex-col xl:flex-row justify-between">
             <div>
-                <router-link to="/">
+                <router-link to="/" class="hidden md:block">
                     <img src="@/assets/images/logo.svg" class="w-12" alt="Light Logo" />
                 </router-link>
                 <!-- Footer social links -->

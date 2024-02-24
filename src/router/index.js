@@ -16,8 +16,7 @@ const routes = [
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () =>
-            import(/* webpackChunkName: "about" */ '../views/About.vue'),
+        component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
         meta: {
             title: 'MTX - About',
         },
@@ -28,8 +27,7 @@ const routes = [
         // route level code-splitting
         // this generates a separate chunk (projects.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () =>
-            import(/* webpackChunkName: "projects" */ '../views/Works.vue'),
+        component: () => import(/* webpackChunkName: "projects" */ '../views/Works.vue'),
         meta: {
             title: 'MXT - Works',
         },
@@ -40,10 +38,7 @@ const routes = [
         // route level code-splitting
         // this generates a separate chunk (projects.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () =>
-            import(
-                /* webpackChunkName: "projects" */ '../views/SingleProject.vue'
-            ),
+        component: () => import(/* webpackChunkName: "projects" */ '../views/SingleProject.vue'),
         meta: {
             title: 'MTX - Single Project',
         },
@@ -54,8 +49,7 @@ const routes = [
         // route level code-splitting
         // this generates a separate chunk (projects.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () =>
-            import(/* webpackChunkName: "projects" */ '../views/Blogs.vue'),
+        component: () => import(/* webpackChunkName: "projects" */ '../views/Blogs.vue'),
         meta: {
             title: 'MTX - Blogs',
         },
@@ -66,10 +60,7 @@ const routes = [
         // route level code-splitting
         // this generates a separate chunk (projects.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () =>
-            import(
-                /* webpackChunkName: "projects" */ '../views/SingleBlog.vue'
-            ),
+        component: () => import(/* webpackChunkName: "projects" */ '../views/SingleBlog.vue'),
         meta: {
             title: 'MTX - Blog',
         },
@@ -79,6 +70,9 @@ const routes = [
 const router = createRouter({
     history: createWebHashHistory(process.env.BASE_URL),
     routes,
+    scrollBehavior() {
+        return { top: 0 };
+    },
 });
 
 export default router;
@@ -117,9 +111,7 @@ router.beforeEach((to, from, next) => {
     }
 
     // Remove any stale meta tags from the document using the key attribute we set below.
-    Array.from(document.querySelectorAll('[data-vue-router-controlled]')).map(
-        (el) => el.parentNode.removeChild(el)
-    );
+    Array.from(document.querySelectorAll('[data-vue-router-controlled]')).map((el) => el.parentNode.removeChild(el));
 
     // Skip rendering meta tags if there are none.
     if (!nearestWithMeta) return next();

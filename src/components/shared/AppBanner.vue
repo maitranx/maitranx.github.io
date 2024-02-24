@@ -23,7 +23,7 @@ export default {
 </script>
 
 <template>
-    <section class="flex flex-col xl:justify-between items-center xl:flex-row mt-6 xl:mt-10 pb-[168px]">
+    <section class="flex flex-col xl:justify-between items-center xl:flex-row pt-6 xl:pt-10 pb-[168px]">
         <!-- Banner left contents -->
         <div class="flex flex-col w-full text-left z-50">
             <div class="w-full font-medium mt-8 xl:text-6xl text-[32px] text-left xl:text-left text-primary-light">

@@ -32,9 +32,9 @@ export default {
 </script>
 
 <template>
-    <div class="px-4 md:px-[84px] xl:px-[168px]">
+    <div id="home" class="px-4 md:px-[84px] xl:px-[168px]">
         <!-- Banner -->
-        <AppBanner class="mb-5 xl:mb-8" />
+        <AppBanner />
 
         <!-- Projects -->
         <ProjectsGrid v-if="!isSmallScreen" title="my work" category="Scalable ecosystem products" :projectList="filteredProjects" />

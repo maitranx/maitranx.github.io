@@ -1,7 +1,6 @@
 <script>
 // import ThemeSwitcher from '../ThemeSwitcher';
 import HireMeModal from '../HireMeModal.vue';
-import feather from 'feather-icons';
 import AppHeaderLinks from './AppHeaderLinks.vue';
 // import Button from '../reusable/Button.vue';
 
@@ -17,6 +16,7 @@ export default {
             isOpen: false,
             theme: '',
             modal: false,
+            navHeight: 0,
             categories: [
                 {
                     id: 1,
@@ -41,12 +41,17 @@ export default {
             ],
         };
     },
-
-    created() {
-        this.theme = localStorage.getItem('theme') || 'dark';
+    computed: {
+        routePath() {
+            return this.$router.currentRoute.value.fullPath;
+        },
+    },
+    watch: {
+        routePath() {
+            this.isOpen = false;
+        },
     },
     mounted() {
-        feather.replace();
         this.theme = localStorage.getItem('theme') || 'dark';
     },
     methods: {
@@ -63,9 +68,14 @@ export default {
                 this.modal = true;
             }
         },
-    },
-    updated() {
-        feather.replace();
+        openNav() {
+            if (!this.isOpen) this.calculateNavHeight();
+
+            this.isOpen = !this.isOpen;
+        },
+        calculateNavHeight() {
+            this.navHeight = document.querySelector('#home')?.clientHeight || screen.height - 68;
+        },
     },
 };
 </script>
@@ -85,7 +95,7 @@ export default {
 
                 <!-- Small screen hamburger menu -->
                 <div class="md:hidden">
-                    <button @click="isOpen = !isOpen" type="button" class="focus:outline-none" aria-label="Hamburger Menu">
+                    <button @click="openNav" type="button" class="focus:outline-none" aria-label="Hamburger Menu">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
@@ -104,17 +114,36 @@ export default {
                             ></path>
                         </svg>
                     </button>
-                    <!-- <div class="absolute left-0 flex-col justify-start items-start inline-flex">
-                        <div class="p-6 justify-center items-center gap-2.5 inline-flex">
-                            <div class="text-white text-xl font-normal font-['Poppins'] leading-[30px]">Works</div>
-                        </div>
-                        <div class="p-6 justify-center items-center gap-2.5 inline-flex">
-                            <div class="text-white text-xl font-normal font-['Poppins'] leading-[30px]">Blogs</div>
-                        </div>
-                        <div class="p-6 justify-center items-center gap-2.5 inline-flex">
-                            <div class="text-white text-xl font-normal font-['Poppins'] leading-[30px]">About me</div>
-                        </div>
-                    </div> -->
+                    <div
+                        v-if="isOpen"
+                        :style="{ height: navHeight + 'px' }"
+                        class="absolute text-primary-light dark:text-ternary-light z-[1000] bg-black top-[68px] left-0 w-full flex-col justify-start items-start inline-flex"
+                    >
+                        <router-link
+                            to="/works"
+                            aria-label="Works"
+                            class="p-6 justify-center items-center gap-2.5 inline-flex"
+                            :class="{ 'dark:text-cyan-300 text-cyan-600': $route.path.includes('/works') }"
+                        >
+                            <div class="text-xl font-normal font-['Poppins'] leading-[30px]">Works</div>
+                        </router-link>
+                        <router-link
+                            to="/blogs"
+                            aria-label="Blogs"
+                            class="p-6 justify-center items-center gap-2.5 inline-flex"
+                            :class="{ 'dark:text-cyan-300 text-cyan-600': $route.path.includes('/blogs') }"
+                        >
+                            <div class="text-xl font-normal font-['Poppins'] leading-[30px]">Blogs</div>
+                        </router-link>
+                        <router-link
+                            to="/about"
+                            aria-label="About Me"
+                            class="p-6 justify-center items-center gap-2.5 inline-flex"
+                            :class="{ 'dark:text-cyan-300 text-cyan-600': $route.path.includes('/about') }"
+                        >
+                            <div class="text-xl font-normal font-['Poppins'] leading-[30px]">About me</div>
+                        </router-link>
+                    </div>
                 </div>
             </div>
 

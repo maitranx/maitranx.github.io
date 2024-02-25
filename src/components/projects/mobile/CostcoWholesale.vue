@@ -317,11 +317,14 @@
             </div>
         </div>
     </div>
+    <PasswordModal :showModal="true" :modal="modal" aria-modal="View Password Modal" @success="modal = false" />
 </template>
 <script>
 /* eslint-disable vue/no-unused-components */
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { FigmaIcon, Web3Icon, PowerBI } from '@/components/icons';
+import PasswordModal from '@/components/shared/PasswordModal.vue';
+
 export default {
     name: 'AuraScanProject',
     components: {
@@ -330,6 +333,7 @@ export default {
         FigmaIcon,
         Web3Icon,
         PowerBI,
+        PasswordModal
     },
     data: () => ({
         accordians: {
@@ -337,6 +341,25 @@ export default {
             2: false,
             3: false,
         },
+        modal: false
     }),
+    mounted() {
+        if (this.modal) {
+            // Stop screen scrolling
+            document
+                .getElementsByTagName('html')[0]
+                .classList.remove('overflow-y-hidden');
+            document.getElementById("key").value = '';
+            document.getElementById("error").innerHTML = "";
+            this.modal = false;
+        } else {
+            document
+                .getElementsByTagName('html')[0]
+                .classList.remove('overflow-y-hidden');
+            document.getElementById('key').value = '';
+            document.getElementById('error').innerHTML = "";
+            this.modal = true;
+        }
+    },
 };
 </script>

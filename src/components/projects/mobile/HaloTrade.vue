@@ -23,10 +23,14 @@ export default {
         <!-- Section 1 -->
         <div class="relative bg-[url('@/assets/images/halo/mobile/bg-1.png')] bg-cover h-0 pb-[calc(914/563*100%)]">
             <div class="absolute inset-0 h-full">
-                <div
-                    class="relative text-center mt-20 text-[32px] font-bold font-jost text-transparent bg-clip-text bg-gradient-to-r z-[999] from-lime-500 to-emerald-500"
-                >
-                    HALLOTRADE
+                <div class="mt-20 flex justify-center">
+                    <div
+                        class="relative text-center text-[32px] font-bold font-jost text-transparent bg-clip-text bg-gradient-to-r z-[999] from-lime-500 to-emerald-500"
+                    >
+                        <img src="@/assets/images/halo/HALOTRADE.png" alt="" class="absolute w-[76%] top-[31px] left-[50%] translate-x-[-50%]" />
+
+                        HALLOTRADE
+                    </div>
                 </div>
 
                 <div class="mt-10 mx-7">
@@ -127,13 +131,7 @@ export default {
                     title="Collaboration and Documentation"
                     desc="Worked with developers and other stakeholders to align on implementation."
                 />
-                <HaloCard
-                    accordian
-                    class="w-full"
-                    order="5"
-                    title="Design Log"
-                    desc="Document decisions, progress, and feedback." 
-                />
+                <HaloCard accordian class="w-full" order="5" title="Design Log" desc="Document decisions, progress, and feedback." />
                 <HaloCard
                     accordian
                     class="w-full"

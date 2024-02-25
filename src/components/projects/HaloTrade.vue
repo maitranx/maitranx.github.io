@@ -16,13 +16,14 @@ export default {
     <div>
         <div class="relative bg-[url('@/assets/images/halo/bg-1.png')] bg-cover h-0 pb-[calc(800/1440*100%)]">
             <div class="absolute inset-0 h-full">
-                <div class="absolute top-0 left-0 z-99 p-24 w-full grid place-items-center">
+                <div class="absolute top-0 left-0 z-99 p-12 xl:p-24 w-full grid place-items-center">
                     <div
                         class="relative text-7xl font-bold font-jost text-transparent bg-clip-text bg-gradient-to-r z-[999] from-lime-500 to-emerald-500"
                     >
+                        <img src="@/assets/images/halo/HALOTRADE.png" alt="" class="absolute w-[76%] top-[42px] left-[50%] translate-x-[-50%]" />
                         HALLOTRADE
                     </div>
-                    <img src="@/assets/images/halo/s1-item1.png" class="absolute z-99 rounded-xl cursor-pointer mt-36" alt="bg" />
+                    <img src="@/assets/images/halo/s1-item1.png" class="absolute z-99 rounded-xl cursor-pointer mt-36 scale-75 xl:scale-100" alt="bg" />
                     <img src="@/assets/images/halo/s1-item2.png" class="rounded-xl cursor-pointer mt-24" alt="bg" />
                 </div>
             </div>
@@ -58,7 +59,7 @@ export default {
                             <div class="flex gap-6">
                                 <div class="flex items-center gap-4 pr-6 border-r border-neutral-500">
                                     <div class="text-white text-xs font-semibold font-inter uppercase leading-none">Stake</div>
-                                    <FigmaIcon/>
+                                    <FigmaIcon />
                                     <Web3Icon />
                                 </div>
                                 <div class="flex items-center gap-4">
@@ -226,15 +227,14 @@ export default {
                             <span class="text-4xl font-bold">Building smart components</span>
                         </div>
                         <div class="h-12 px-6 py-2.5 bg-gray-900 rounded-xl justify-center items-center gap-4 inline-flex mt-8">
-                                <router-link
-                                    to="/blogs/Building-smart-components-in-Figma"
-                                    aria-label="Blogs"
-                                    class="text-center text-brand text-2xl font-semibold leading-loose"
-                                >
-                                    <Button title="Dive in Now" class="italic underline" />
-                                    Dive in Now
-                                </router-link
-                                >
+                            <router-link
+                                to="/blogs/Building-smart-components-in-Figma"
+                                aria-label="Blogs"
+                                class="text-center text-brand text-2xl font-semibold leading-loose"
+                            >
+                                <Button title="Dive in Now" class="italic underline" />
+                                Dive in Now
+                            </router-link>
                         </div>
                     </div>
                 </div>

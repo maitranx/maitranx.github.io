@@ -41,7 +41,7 @@ export default {
         <!-- Blog related projects -->
         <!-- <BlogRelated :relatedBlog="blogDetail.relatedBlog"/> -->
 
-        <div class="flex justify-center items-center pt-12 xl:flex">
+        <div class="flex justify-center items-center pt-12 py-20 xl:flex">
             <router-link
                 to="/blogs"
                 class="font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg focus:ring-1 focus:ring-indigo-900 text-white text-lg xl:text-xl duration-300 hover:text-sky-300"

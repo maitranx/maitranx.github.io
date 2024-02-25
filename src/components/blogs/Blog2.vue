@@ -1,6 +1,6 @@
 <script></script>
 <template>
-    <div class="px-[24px] md:px-[345px]">
+    <div class="px-[24px] md:px-[120px] xl:px-[345px]">
         <div class="text-white">
             <div class="text-white text-2xl font-semibold leading-9 pb-6">Reasons to build smart components</div>
             <div class="text-white text-base font-normal leading-snug">
@@ -85,7 +85,9 @@
                     Your browser does not support the video tag
                 </video>
             </div>
-            <div class="text-neutral-200 text-sm font-normal leading-none tracking-tight">Apply .base components, components properties, slot to build a dynamic cell table</div>
+            <div class="text-neutral-200 text-sm font-normal leading-none tracking-tight">
+                Apply .base components, components properties, slot to build a dynamic cell table
+            </div>
         </div>
         <div class="flex flex-col items-center py-4">
             <div>
@@ -94,11 +96,15 @@
                     Your browser does not support the video tag
                 </video>
             </div>
-            <div class="text-neutral-200 text-sm font-normal leading-none tracking-tight">Apply components properties, slot to build page template</div>
+            <div class="text-neutral-200 text-sm font-normal leading-none tracking-tight">
+                Apply components properties, slot to build page template
+            </div>
         </div>
         <div class="py-6 text-white text-xl font-semibold leading-normal">Closing thoughts</div>
-            <div class="text-white text-base font-normal leading-snug">
-                By leveraging the base component, component properties, and slots in Figma, you can create smart components that are reusable, customizable, and adaptable to different design needs. These concepts empower designers to build efficient and consistent design systems while providing users with the flexibility to tailor component instances to their specific requirements.
-            </div>
+        <div class="text-white text-base font-normal leading-snug">
+            By leveraging the base component, component properties, and slots in Figma, you can create smart components that are reusable,
+            customizable, and adaptable to different design needs. These concepts empower designers to build efficient and consistent design systems
+            while providing users with the flexibility to tailor component instances to their specific requirements.
+        </div>
     </div>
 </template>

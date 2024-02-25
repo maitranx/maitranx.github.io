@@ -46,7 +46,7 @@ export default {
         <component :is="component"></component>
         <!-- Project related projects -->
 
-        <div class="flex justify-center items-center p-12 xl:flex">
+        <div class="flex justify-center items-center py-20 xl:flex">
             <router-link
                 to="/works"
                 class="font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg focus:ring-1 focus:ring-indigo-900 text-white text-lg xl:text-xl duration-300 hover:text-sky-300"

@@ -26,6 +26,9 @@ export default {
             }
         },
     },
+    beforeUnmount() {
+        document.getElementsByTagName('html')[0].classList.remove('overflow-y-hidden');
+    },
 };
 </script>
 

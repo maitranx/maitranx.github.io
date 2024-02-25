@@ -76,7 +76,11 @@ export default {
                             <div class="text-white text-3xl font-semibold leading-10">Work experience</div>
                             <div class="flex-col justify-start items-start gap-2.5 flex">
                                 <div class="h-10 px-4 py-2.5 rounded-lg justify-center items-center gap-4 flex">
-                                    <div class="text-center text-white italic text-xl font-normal underline leading-loose">Read CV</div>
+                                    <a
+                                        href="https://read.cv/maitranx"
+                                        class="text-center text-white italic text-xl font-normal underline leading-loose"
+                                        >Read CV</a
+                                    >
                                 </div>
                             </div>
                         </div>

@@ -141,7 +141,7 @@ export default {
                     <div class="my-12">
                         <div class="flex-col flex text-left">
                             <div class="text-neutral-50 text-base font-normal leading-tight mb-6">about me</div>
-                            <div class="text-white text-3xl md:text-5xl font-semibold leading-relaxed">My design process</div>
+                            <div class="text-white text-3xl md:text-5xl font-semibold leading-relaxed">Design process</div>
                         </div>
 
                         <div class="block lg:hidden py-8">

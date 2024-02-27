@@ -21,14 +21,14 @@ export default {
                         <div class="xl:w-3/5 mr-8 flex flex-col gap-6">
                             <div class="text-neutral-50 text-base font-normal leading-tight">about me</div>
                             <div class="flex-col justify-start items-start flex">
-                                <div class="text-white text-3xl md:text-5xl font-medium xl:w-2/3 text-left leading-relaxed">
+                                <div class="text-white text-3xl md:text-5xl font-medium xl:w-2/3 text-left md:leading-normal">
                                     Fulfilling & diverse lifestyle
                                 </div>
                             </div>
-                            <div class="text-neutral-400 text-base font-normal leading-tight">
+                            <div class="text-neutral-400 text-base font-normal leading-normal">
                                 Running provides me with physical and mental well-being, while graphic design lets me explore your artistic side, and
                                 product design allows me to apply my skills in a meaningful and professional context.
-                                <br />Together, these pursuits contribute to a fulfilling and diverse lifestyle.
+                                Together, these pursuits contribute to a fulfilling and diverse lifestyle.
                             </div>
                         </div>
                         <div class="xl:w-2/5">
@@ -36,35 +36,35 @@ export default {
                                 <div class="text-neutral-400 text-base font-normal leading-tight">By balancing personal interests in</div>
                                 <div class="flex-col xl:justify-start xl:items-start gap-2 flex">
                                     <div class="w-full gap-6 flex justify-center">
-                                        <div class="flex-1 p-6 bg-neutral-900 rounded-2xl flex-col items-start flex text-left gap-6">
-                                            <div class="w-10 h-10 px-1.5 py-1 flex-col justify-center items-center flex gap-6">
+                                        <div class="flex-1 p-6 pb-4 bg-neutral-900 rounded-2xl flex-col items-start flex text-left gap-6">
+                                            <div class="w-8 h-8 p-0.5 justify-center items-center flex">
                                                 <img src="@/assets/icons/running.svg" class="w-10" alt="Running icon" />
                                             </div>
-                                            <div>
-                                                <span class="text-sky-300 text-xl font-semibold">Running </span> <br class="hidden xl:block" />
-                                                <span class="text-sky-300 text-xl font-normal leading-loose text-left">for Fun</span>
+                                            <div class="text-lg">
+                                                <span class="text-sky-300 font-semibold">Running </span> <br class="hidden xl:block" />
+                                                <span class="text-sky-300 font-normal leading-loose text-left">for Fun</span>
                                             </div>
                                         </div>
-                                        <div class="flex-1 p-6 bg-neutral-900 rounded-2xl flex-col items-start flex text-left gap-6">
+                                        <div class="flex-1 p-6 pb-4 bg-neutral-900 rounded-2xl flex-col items-start flex text-left gap-6">
                                             <div class="w-8 h-8 p-0.5 justify-center items-center flex">
                                                 <img src="@/assets/icons/pen.svg" class="w-10" alt="Pen icon" />
                                             </div>
-                                            <div>
-                                                <span class="text-sky-300 text-xl font-semibold leading-normal">Graphic Design </span>
-                                                <br class="hidden xl:block" /><span class="text-sky-300 text-xl font-normal leading-loose"
+                                            <div class="text-lg">
+                                                <span class="text-sky-300 font-semibold leading-normal">Graphic design </span>
+                                                <br class="hidden xl:block" /><span class="text-sky-300 font-normal leading-loose"
                                                     >for Fun</span
                                                 >
                                             </div>
                                         </div>
                                     </div>
                                     <div class="text-neutral-400 text-base font-normal font-['Poppins'] leading-tight">with professional role in</div>
-                                    <div class="w-full h-36 p-6 bg-neutral-900 rounded-2xl flex-col justify-between items-start flex">
+                                    <div class="w-full h-36 p-6 pb-4 bg-neutral-900 rounded-2xl flex-col justify-between items-start flex">
                                         <div class="w-8 h-8 px-0.5 pt-1 pb-0.5 justify-center items-center flex">
                                             <img src="@/assets/icons/design.svg" class="w-10" alt="Design icon" />
                                         </div>
-                                        <div>
-                                            <span class="text-sky-300 text-xl font-semibold leading-normal">Product design </span
-                                            ><span class="text-sky-300 text-xl font-normal leading-loose">for a Living</span>
+                                        <div class="text-lg">
+                                            <span class="text-sky-300 font-semibold leading-normal">Product design </span
+                                            ><span class="text-sky-300 font-normal leading-loose">for a Living</span>
                                         </div>
                                     </div>
                                 </div>
@@ -76,7 +76,7 @@ export default {
                             <div class="text-white text-3xl font-semibold leading-10">Work experience</div>
                             <div class="flex-col justify-start items-start gap-2.5 flex">
                                 <div class="h-10 px-4 py-2.5 rounded-lg justify-center items-center gap-4 flex">
-                                    <a
+                                    <a target="_blank"
                                         href="https://read.cv/maitranx"
                                         class="text-center text-white italic text-xl font-normal underline leading-loose"
                                         >Read CV</a

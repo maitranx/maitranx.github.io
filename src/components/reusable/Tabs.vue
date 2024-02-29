@@ -2,7 +2,7 @@
     <div>
         <div class="w-full border-b border-dashed border-gray-400 justify-start items-center inline-flex">
             <div v-for="(tab, index) in tabs" :key="index" @click="activateTab(tab)"
-                :class="{ 'active border-b-2 border-[#A5F3FC] text-[#7DD3FC]': tab.isActive }"
+                :class="{ 'active border-b-2 border-[#7DD3FC] text-[#7DD3FC]': tab.isActive }"
                 class="cursor-pointer mb-[-1px] px-6 py-4 justify-center items-center gap-2.5 flex">
                 <div class="text-base font-semibold">{{ tab.title }}</div>
             </div>

@@ -47,7 +47,7 @@ const projects = [
         title: 'Dispute workstation; Paypoint',
         category: 'Global fintech products for banking',
         img: require('@/assets/images/ui-project-4.png'),
-        skate: require('@/assets/icons/bpi.svg'),
+        skate: require('@/assets/icons/sketch.svg'),
         client: require('@/assets/icons/fiserv.svg'),
         isFeature: false,
         isContribute: false,
@@ -58,20 +58,21 @@ const projects = [
         category: 'HMI System for blood hematology analyzer; Website builder studio',
         img: require('@/assets/images/ui-project-5.png'),
         skate: require('@/assets/images/hmi.svg'),
-        client: require('@/assets/icons/costco.svg'),
+        client: require('@/assets/images/logo_confidential.svg'),
         isFeature: false,
         isContribute: true,
     },
-    // {
-    //     id: 'workshop',
-    //     title: 'Internal workshop',
-    //     category: 'Holistic Design for digital products in the right time description',
-    //     img: require('@/assets/images/ui-project-3.jpg'),
-    //     skate: require('@/assets/icons/bpi.svg'),
-    //     client: require('@/assets/icons/costco.svg'),
-    //     isFeature: false,
-    //     isContribute: true,
-    // }
+    {
+        id: 'workshop',
+        title: 'Internal workshop',
+        category: 'Through knowledge sharing and skill development initiatives, I aim to create an environment where everyone can thrive, grow, and contribute to our shared success.',
+        img: require('@/assets/images/thumbnail_presentation.png'),
+        skate: require('@/assets/icons/bpi.svg'),
+        client: require('@/assets/images/logo_fpt_des.svg'),
+        isFeature: false,
+        isContribute: true,
+        isSkateHidden: true
+    }
 ];
 
 export default projects;

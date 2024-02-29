@@ -18,20 +18,25 @@ export default {
                 </p>
                 <span class="font-general-regular text-sm text-ternary-dark dark:text-ternary-light">{{ project.category }}</span>
             </div>
-            <div class="px-4 py-6 border-t border-b border-neutral-700 justify-start items-center">
+            <div class="px-4 py-6 border-t border-b border-neutral-700 justify-start items-center" 
+                v-if="project.isSkateHidden !== true">
                 <div class="flex justify-between items-center">
                     <div class="flex items-center">
                         <div class="text-sm text-ternary-dark dark:text-ternary-light">Stake</div>
                         <img src="@/assets/icons/figma.svg" class="w-10 ml-4" alt="Light Logo" /> 
                         <span class="text-neutral-200 text-xs font-semibold ml-2">Figma</span>
                         <img :src="project.skate" class="w-18 ml-4" alt="Light Logo" />
+                        <span v-if="project.skate && project.skate.includes('bpi')" 
+                            class="text-neutral-200 text-xs font-semibold ml-2">Power BI</span> 
+                        <span v-if="project.skate && project.skate.includes('sketch')" 
+                            class="text-neutral-200 text-xs font-semibold ml-2">Sketch</span>
                     </div>
                 </div>
             </div>
-            <div class="justify-end items-center px-4 py-6">
+            <div class="justify-end items-center px-4 py-6" :class="{'border-t border-neutral-700': project.isSkateHidden === true }">
                 <div class="flex justify-between items-center">
                     <div class="flex items-center">
-                        <div class="text-sm text-ternary-dark dark:text-ternary-light">Client</div>
+                        <div v-if="!project.client.includes('fpt_des')" class="text-sm text-ternary-dark dark:text-ternary-light">Client</div>
                         <img :src="project.client" class="w-24 ml-4 h-[34px]" alt="Light Logo" />
                     </div>
                     <div>

@@ -17,7 +17,7 @@ export default {
                 class="font-general-regular text-center text-secondary-dark dark:text-neutral-50 text-base xl:text-xl font-n mb-2 xl:mb-8">
                 {{ project.name }}
             </div>
-            <div class="text-center text-white text-5xl font-medium font-['Poppins'] leading-[72px]" v-html="project.title">
+            <div class="text-center text-white text-2xl xl:text-5xl  font-medium font-['Poppins'] leading-[150%]" v-html="project.title">
             </div>
 
 

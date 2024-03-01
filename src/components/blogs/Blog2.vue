@@ -62,7 +62,7 @@
                     Your browser does not support the video tag
                 </video>
             </div>
-            <div class="text-neutral-200 text-sm font-normal leading-none tracking-tight">Expose nested component demo</div>
+            <div class="text-neutral-200 text-sm font-normal leading-none tracking-tight mt-2">Expose nested component demo</div>
         </div>
         <div class="flex flex-col items-center py-4">
             <div>
@@ -71,7 +71,7 @@
                     Your browser does not support the video tag
                 </video>
             </div>
-            <div class="text-neutral-200 text-sm font-normal leading-none tracking-tight">Preferred value demo</div>
+            <div class="text-neutral-200 text-sm font-normal leading-none tracking-tight mt-2">Preferred value demo</div>
         </div>
         <div class="text-white text-xl font-semibold leading-normal pt-6">Slots</div>
         <div class="text-white text-base font-normal leading-snug py-6">
@@ -85,7 +85,7 @@
                     Your browser does not support the video tag
                 </video>
             </div>
-            <div class="text-neutral-200 text-sm font-normal leading-none tracking-tight">
+            <div class="text-neutral-200 text-sm font-normal leading-none tracking-tight mt-2">
                 Apply .base components, components properties, slot to build a dynamic cell table
             </div>
         </div>
@@ -96,7 +96,7 @@
                     Your browser does not support the video tag
                 </video>
             </div>
-            <div class="text-neutral-200 text-sm font-normal leading-none tracking-tight">
+            <div class="text-neutral-200 text-sm font-normal leading-none tracking-tight mt-2">
                 Apply components properties, slot to build page template
             </div>
         </div>

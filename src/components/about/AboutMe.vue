@@ -329,7 +329,7 @@ export default {
                         <div class="grid grid-cols-2 gap-12 border-dashed border-t border-neutral-500 py-12">
                             <div class="text-left">
                                 <div class="text-white text-5xl font-semibold leading-10">1</div>
-                                <div class="text-white text-base font-normal leading-tight pt-8 pl-3">
+                                <div class="text-slate-300 text-base font-normal leading-tight pt-8 pl-3">
                                     <ul class="list-disc">
                                         <li>Business requirements</li>
                                         <li>Stakeholder sessions</li>
@@ -346,7 +346,7 @@ export default {
                             </div>
                             <div class="text-left">
                                 <div class="text-white text-5xl font-semibold leading-10">2</div>
-                                <div class="text-white text-base font-normal leading-tight pt-8 pl-3">
+                                <div class="text-slate-300 text-base font-normal leading-tight pt-8 pl-3">
                                     <ul class="list-disc">
                                         <li>Wireframe</li>
                                         <li>Interactive prototypes</li>
@@ -362,7 +362,7 @@ export default {
                             </div>
                             <div class="text-left">
                                 <div class="text-white text-5xl font-semibold leading-10">3</div>
-                                <div class="text-white text-base font-normal leading-tight pt-8 pl-3">
+                                <div class="text-slate-300 text-base font-normal leading-tight pt-8 pl-3">
                                     <ul class="list-disc">
                                         <li>Specification documents</li>
                                         <li>Developer handoff export</li>
@@ -372,7 +372,7 @@ export default {
                             </div>
                             <div class="text-left">
                                 <div class="text-white text-5xl font-semibold leading-10">4</div>
-                                <div class="text-white text-base font-normal leading-tight pt-8 pl-3">
+                                <div class="text-slate-300 text-base font-normal leading-tight pt-8 pl-3">
                                     <ul class="list-disc">
                                         <li>User feedback</li>
                                         <li>Site flow analytics</li>

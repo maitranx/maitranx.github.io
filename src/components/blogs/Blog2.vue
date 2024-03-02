@@ -3,7 +3,7 @@
     <div class="px-[24px] md:px-[120px] xl:px-[345px]">
         <div class="text-white">
             <div class="text-white text-2xl font-semibold leading-9 pb-6">Reasons to build smart components</div>
-            <div class="text-white text-base font-normal leading-snug">
+            <div class="text-slate-300 text-base font-normal leading-snug">
                 Building smart components in Figma for a design system is important for several reasons:
             </div>
             <div class="w-96 h-16 py-6 justify-between items-start gap-6 inline-flex">
@@ -27,12 +27,12 @@
         <!-- section 2 -->
         <div class="py-16">
             <div class="text-white text-2xl font-semibold leading-9">Key concepts</div>
-            <div class="text-white text-base font-normal leading-snug py-6">
+            <div class="text-slate-300 text-base font-normal leading-snug py-6">
                 When building smart components in Figma, there are three key concepts to consider: the .base component, component properties, and
                 slots.
             </div>
             <div class="text-white text-xl font-semibold leading-normal">.base component</div>
-            <div class="text-white text-base font-normal leading-snug py-6">
+            <div class="text-slate-300 text-base font-normal leading-snug py-6">
                 The .base components serve as the foundation, providing a centralized source of truth that can be easily modified and updated.
                 <br /><br />
                 It defines the core structure, styling, and functionality that will be shared across multiple instances.
@@ -41,12 +41,12 @@
                 <div>
                     <img src="@/assets/images/blog/blog-2/img-1.png" alt="blog" />
                 </div>
-                <div class="text-white p-2 text-sm font-normal leading-none tracking-tight">
+                <div class="text-slate-300 p-2 text-sm font-normal leading-none tracking-tight">
                     Using .base components to create Input, dropdown, search components
                 </div>
             </div>
             <div class="py-6 text-white text-xl font-semibold leading-normal">Component Properties</div>
-            <ul class="list-disc text-white pl-4">
+            <ul class="list-disc text-slate-300 pl-4">
                 <li>Variant property</li>
                 <li>Boolean property</li>
                 <li>Instance swap</li>
@@ -62,7 +62,7 @@
                     Your browser does not support the video tag
                 </video>
             </div>
-            <div class="text-neutral-200 text-sm font-normal leading-none tracking-tight mt-2">Expose nested component demo</div>
+            <div class="text-slate-300 text-sm font-normal leading-none tracking-tight mt-2">Expose nested component demo</div>
         </div>
         <div class="flex flex-col items-center py-4">
             <div>
@@ -71,10 +71,10 @@
                     Your browser does not support the video tag
                 </video>
             </div>
-            <div class="text-neutral-200 text-sm font-normal leading-none tracking-tight mt-2">Preferred value demo</div>
+            <div class="text-slate-300 text-sm font-normal leading-none tracking-tight mt-2">Preferred value demo</div>
         </div>
         <div class="text-white text-xl font-semibold leading-normal pt-6">Slots</div>
-        <div class="text-white text-base font-normal leading-snug py-6">
+        <div class="text-slate-300 text-base font-normal leading-snug py-6">
             Slots are placeholders within a component that allow users to insert or replace specific content. They provide the ability to customize
             the component's content while preserving its overall structure and functionality.
         </div>
@@ -85,7 +85,7 @@
                     Your browser does not support the video tag
                 </video>
             </div>
-            <div class="text-neutral-200 text-sm font-normal leading-none tracking-tight mt-2">
+            <div class="text-slate-300 text-sm font-normal leading-none tracking-tight mt-2">
                 Apply .base components, components properties, slot to build a dynamic cell table
             </div>
         </div>
@@ -96,12 +96,12 @@
                     Your browser does not support the video tag
                 </video>
             </div>
-            <div class="text-neutral-200 text-sm font-normal leading-none tracking-tight mt-2">
+            <div class="text-slate-300 text-sm font-normal leading-none tracking-tight mt-2">
                 Apply components properties, slot to build page template
             </div>
         </div>
         <div class="py-6 text-white text-xl font-semibold leading-normal">Closing thoughts</div>
-        <div class="text-white text-base font-normal leading-snug">
+        <div class="text-slate-300 text-base font-normal leading-snug">
             By leveraging the base component, component properties, and slots in Figma, you can create smart components that are reusable,
             customizable, and adaptable to different design needs. These concepts empower designers to build efficient and consistent design systems
             while providing users with the flexibility to tailor component instances to their specific requirements.

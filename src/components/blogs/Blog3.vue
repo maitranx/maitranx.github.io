@@ -83,6 +83,15 @@
             <img src="@/assets/images/blog/blog-3/img-9.png" alt="blog" class="pt-6" />
             <div class="text-white p-2 text-sm font-normal leading-none tracking-tight">Publish all styles and components</div>
         </div>
+        <div class="text-white text-xl font-semibold leading-[25px] pt-10">Step 3: Set up Shared library</div>
+        <div class="text-slate-300 text-base font-normal leading-snug py-6">
+            In Shared library file, following these steps:<br/>
+            • Turn on Design system that published in step 2
+            • Published feature components that are repeated in design such as Navigation, homepage,...
+        </div>
+        <div class="flex flex-col items-center justify-center">
+            <img src="@/assets/images/blog/blog-3/img-4.1.png" alt="blog" />
+        </div>
         <div class="text-white text-xl font-semibold leading-[25px] pt-10">Step 4: Set up Design files</div>
         <div class="text-slate-300 text-base font-normal leading-snug py-6">
             • Create multiple empty files for mockups storage. <br />

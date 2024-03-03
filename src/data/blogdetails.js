@@ -39,7 +39,7 @@ const blogdetails = [
      {
         id: 'Dividing-projects-and-keeping-components-organized',
         component: import(/* webpackChunkName: "project-details" */ '@/components/blogs/Blog3.vue'),
-        title: 'Design Dashboard mobile view in Power BI',
+        title: 'Dividing projects and keeping components organized',
         time: 'Dec 22nd, 2023',
         banner: require('@/assets/images/blog/banners-blog/figma-file-banner.png'),
         relatedBlog: {

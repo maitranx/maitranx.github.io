@@ -254,7 +254,7 @@
                 <div
                     class="absolute top-0 bottom-0 left-[calc(756/1243*100%)] rounded-[32px] shadow-[0px_0px_16px_0px_rgba(123,208,16,0.16)] inline-block overflow-hidden"
                 >
-                    <img src="@/assets/images/costco-wholesale/Screen-0.png" alt="" class="w-full h-full" />
+                    <img src="@/assets/images/costco-wholesale/Screen-0.png" alt="" class="h-full" />
                 </div>
             </div>
             <div class="grid grid-cols-5 gap-6 mt-[62px]">

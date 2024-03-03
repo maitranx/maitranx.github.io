@@ -1,9 +1,9 @@
 <script></script>
 <template>
     <div class="px-[24px] md:px-[120px] xl:px-[345px]">
-        <div class="text-white">
-            <div class="text-white text-2xl font-semibold leading-9 pb-6">Challenges and solutions</div>
-            <div class="rounded-xl flex-col justify-start items-start gap-1 inline-flex">
+        <div class="text-white flex flex-col items-center">
+            <div class="text-white text-2xl font-semibold leading-9 pb-6 w-full">Challenges and solutions</div>
+            <div class="rounded-xl flex-col justify-start items-start gap-1 inline-flex  max-w-[750px]">
                 <div class="self-stretch justify-start items-start gap-1 inline-flex">
                     <div class="grow shrink basis-0 self-stretch px-4 py-3 bg-neutral-900 justify-start items-start gap-2.5 flex">
                         <div class="grow shrink basis-0 text-slate-300">

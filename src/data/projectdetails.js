@@ -90,6 +90,7 @@ const projectdetails = [
     {
         id: 'luna',
         component: import(/* webpackChunkName: "project-details" */ '@/components/projects/Luna.vue'),
+        componentMobile: import(/* webpackChunkName: "project-details" */ '@/components/projects/Luna.vue'),
         name: 'Luna',
         title: 'AI-Driven Software development platform',
         relatedProject: {

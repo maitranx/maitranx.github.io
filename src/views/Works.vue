@@ -33,7 +33,7 @@ export default {
 </script>
 
 <template>
-	<div class="px-4 md:px-[84px] xl:px-[168px]">
+	<div class="w-full max-w-[1104px] px-[16px] md:px-0 md:mx-auto">
 		<ProjectsGrid title="my work" category="Scalable ecosystem products" :projectList="contributeProjects" class="my-20"/>
 		<ProjectsGrid title="my work" category="Team contribution" :projectList="nonContributeProjects"/>
 	</div>

@@ -13,7 +13,6 @@
                     <div class="text-white text-xs font-semibold leading-[15px] flex gap-4 items-center">
                         <span>STAKE</span>
                         <FigmaIcon class="text-white" />
-                        <Web3Icon />
                         <PowerBI />
                         <div class="h-[27px] border border-[#6D6D6D] mx-2"></div>
                         <span>CLIENT</span>

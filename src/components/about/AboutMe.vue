@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-    <div class="p-4 md:px-[84px] xl:px-[168px] py-20">
+    <div class="pw-full max-w-[1104px] px-[16px] md:px-0 md:mx-auto">
         <div class="xl:gap-10 text-ternary-dark dark:text-ternary-light mb-12">
             <Tabs>
                 <Tab title="Lifestyle">
@@ -25,7 +25,7 @@ export default {
                                     Fulfilling & diverse lifestyle
                                 </div>
                             </div>
-                            <div class="text-neutral-400 text-base font-normal leading-normal">
+                            <div class="text-slate-300 text-base font-normal leading-normal">
                                 Running provides me with physical and mental well-being, while graphic design lets me explore your artistic side, and
                                 product design allows me to apply my skills in a meaningful and professional context.
                                 Together, these pursuits contribute to a fulfilling and diverse lifestyle.
@@ -399,7 +399,7 @@ export default {
                                 <img src="@/assets/images/about/qr.png" class="mt-4" />
                                 <img src="@/assets/images/about/running.png" class="absolute right-0 bottom-0" />
                             </div>
-                            <div class="md:w-1/2 text-white text-xl font-normal leading-loose text-left">
+                            <div class="md:w-1/2 text-slate-300 text-xl font-normal leading-loose text-left">
                                 If you can't find me at my desk, I'm either running, or just enjoying a cup of tea with my favorite sweet.
                             </div>
                         </div>

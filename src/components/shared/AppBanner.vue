@@ -33,7 +33,7 @@ export default {
                     <span class="bg-gradient-to-r from-indigo-200 to-sky-300 text-transparent bg-clip-text pb-4">product designer </span>
                 </div>
             </div>
-            <div class="w-full xl:w-3/5 pt-10 text-slate-400 xl:text-base text-sm font-normal leading-snug">
+            <div class="w-full xl:w-3/5 pt-10 text-slate-300 xl:text-base text-sm font-normal leading-snug">
                 Allow me to introduce myself as a design generalist with a diverse skill set in various areas, including UX design, design operations,
                 building scalable design systems, and developing MVPs from the ground up.
             </div>

@@ -32,6 +32,7 @@ export default {
         },
     },
     mounted() {
+        console.log(this.getComponent());
         this.getComponent();
     },
 };

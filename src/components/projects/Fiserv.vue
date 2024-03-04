@@ -106,13 +106,13 @@ export default {
         <div class="text-emerald-50 text-6xl font-semibold">Outcomes</div>
         <div class="flex flex-col mt-[60px] gap-[60px]">
             <div class="grid grid-cols-3 gap-6">
-                <img src="@/assets/images/fiserv/oc1.png" class="h-full" />
-                <img src="@/assets/images/fiserv/oc2.png" class="h-full" />
-                <img src="@/assets/images/fiserv/oc3.png" class="h-full" />
+                <img src="@/assets/images/fiserv/oc1.png" class="min-h-[100%]"/>
+                <img src="@/assets/images/fiserv/oc2.png" />
+                <img src="@/assets/images/fiserv/oc3.png" />
             </div>
             <div class="grid grid-cols-2 gap-8">
-                <img src="@/assets/images/fiserv/oc4.png" class="h-full" />
-                <img src="@/assets/images/fiserv/oc5.png" class="h-full" />
+                <img src="@/assets/images/fiserv/oc4.png" />
+                <img src="@/assets/images/fiserv/oc5.png" />
             </div>
         </div>
     </div>

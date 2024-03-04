@@ -67,7 +67,7 @@ export default {
                                     <div class="mt-6 pb-4 sm:pb-1">
                                         <Button
                                             title="Submit"
-                                            class="px-4 sm:px-6 py-2 sm:py-2.5 text-white bg-slate-800 focus:ring-1 hover:bg-slate-700 rounded-md focus:ring-red-900 duration-500"
+                                            class="px-4 sm:px-6 py-2 sm:py-2.5 text-white bg-slate-800 focus:ring-1 hover:bg-sky-300 rounded-md focus:ring-red-900 duration-500"
                                             aria-label="Submit Request"
                                             type="submit"
                                             @click="openModal()"

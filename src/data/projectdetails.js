@@ -107,7 +107,7 @@ const projectdetails = [
     {
         id: 'workshop',
         component: import(/* webpackChunkName: "project-details" */ '@/components/projects/Workshop.vue'),
-        name: 'Holistic Design for digital products in the right time description',
+        name: 'Team sharing & learning',
         title: 'Internal workshop',
         relatedProject: {
             relatedProjectsHeading: 'Related Projects',

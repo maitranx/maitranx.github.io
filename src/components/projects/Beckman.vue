@@ -1,10 +1,10 @@
 <script>
-import { PowerBI, HMI } from '@/components/icons';
+import { FigmaIcon, HMI } from '@/components/icons';
 
 export default {
     name: 'Fiserv',
     components: {
-        PowerBI,
+        FigmaIcon,
         HMI,
     },
 };
@@ -31,7 +31,7 @@ export default {
                         <HMI />
                     </div>
                     <div class="ml-4">
-                        <PowerBI />
+                        <FigmaIcon class="text-white" />
                     </div>
                     <div class="h-[27px] border border-[#6D6D6D] mx-6"></div>
                     <div class="items-center gap-2 flex flex-nowrap">

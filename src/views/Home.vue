@@ -32,7 +32,7 @@ export default {
 </script>
 
 <template>
-    <div id="home" class="px-4 md:px-[84px] xl:px-[168px]">
+    <div id="home" class="w-full max-w-[1104px] px-[16px] md:px-0 md:mx-auto">
         <!-- Banner -->
         <AppBanner />
 

@@ -38,7 +38,7 @@
                 </div>
                 <div class="flex flex-col items-center pt-4">
                     <div>
-                        <img src="@/assets/images/blog/blog-3/Img-3.png" alt="blog" />
+                        <img src="@/assets/images/blog/blog-3/img-3.png" alt="blog" />
                     </div>
                 </div>
             </div>

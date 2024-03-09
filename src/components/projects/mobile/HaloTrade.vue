@@ -250,7 +250,14 @@ export default {
                         </div>
 
                         <div class="h-12 px-6 py-2.5 bg-gray-900 rounded-xl justify-center items-center gap-4 inline-flex mt-8">
-                            <div class="text-center text-brand text-2xl font-semibold leading-loose">Dive in Now</div>
+                            <router-link
+                                to="/blogs/Building-smart-components-in-Figma"
+                                aria-label="Blogs"
+                                class="text-center text-brand text-2xl font-semibold leading-loose"
+                            >
+                                <Button title="Dive in Now" class="italic underline" />
+                                Dive in Now
+                            </router-link>
                         </div>
                     </div>
                 </div>

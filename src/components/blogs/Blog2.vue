@@ -1,13 +1,13 @@
 <script></script>
 <template>
-    <div class="max-w-[1440px] flex items-center justify-center m-auto">
+    <div class="max-w-[1440px] sm:flex items-center justify-center m-auto">
         <div class="px-[24px] md:px-[120px] xl:px-[345px]">
             <div class="text-white">
                 <div class="text-white text-3xl font-medium leading-9 pb-6">Reasons to build smart components</div>
                 <div class="text-slate-300 text-base font-normal leading-normal">
                     Building smart components in Figma for a design system is important for several reasons:
                 </div>
-                <div class="py-6 justify-between items-start gap-6 inline-flex">
+                <div class="py-6 grid sm:grid-cols-5 grid-cols-1 gap-4">
                     <div class="px-3 py-6 bg-cyan-800 rounded-lg justify-center items-center gap-2.5 flex">
                         <div class="text-white text-base font-normal font-['Poppins'] leading-tight">Consistency</div>
                     </div>

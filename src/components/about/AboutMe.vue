@@ -86,7 +86,7 @@ export default {
                         </div>
                         <div class="w-full p-6 bg-neutral-900 rounded-2xl flex-col justify-start items-start gap-4 flex text-primary-light">
                             <div class="self-stretch flex-col justify-start items-start flex">
-                                <div class="self-stretch pb-4 justify-between items-center flex">
+                                <div class="self-stretch pb-4 justify-between flex flex-col sm:flex-row">
                                     <div class="justify-start items-center gap-2 flex">
                                         <div class="w-11 h-11 relative">
                                             <img src="@/assets/images/fpt.png" />
@@ -101,9 +101,9 @@ export default {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="text-neutral-200 text-base font-normal leading-tight">Product designer</div>
+                                    <div class="text-neutral-200 text-base font-normal leading-tight ml-0 sm:ml-auto mt-3">Senior Product designer</div>
                                 </div>
-                                <div class="self-stretch py-4 border-t border-dashed border-neutral-500 justify-between items-center flex">
+                                <div class="self-stretch py-4 border-t border-dashed border-neutral-500 flex flex-col sm:flex-row">
                                     <div class="justify-start items-center gap-2 flex">
                                         <div class="w-11 h-11 relative">
                                             <img src="@/assets/images/aperia.png" />
@@ -118,9 +118,9 @@ export default {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="text-neutral-200 text-base font-normal leading-tight">Product designer</div>
+                                    <div class="text-neutral-200 text-base font-normal leading-tight ml-0 sm:ml-auto mt-3">Product designer</div>
                                 </div>
-                                <div class="self-stretch pt-4 border-t border-dashed border-neutral-500 justify-between items-center flex">
+                                <div class="self-stretch pt-4 border-t border-dashed border-neutral-500 justify-between flex flex-col sm:flex-row">
                                     <div class="justify-start items-center gap-2 flex">
                                         <div class="w-11 h-11 relative">
                                             <img src="@/assets/images/nashtech.png" />
@@ -135,7 +135,7 @@ export default {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="text-neutral-200 text-base font-normal leading-tight">Senior multimedia designer</div>
+                                    <div class="text-neutral-200 text-base font-normal leading-tight ml-0 sm:ml-auto mt-3">Senior multimedia designer</div>
                                 </div>
                             </div>
                         </div>

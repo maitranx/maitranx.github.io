@@ -327,7 +327,7 @@
                     <div class="h-12 px-6 py-2.5 bg-gray-900 rounded-xl border-2 border-blue-800 justify-center items-center gap-4 inline-flex">
                         <a
                             class="text-center text-neutral-200 text-2xl font-semibold leading-[30px]"
-                            href="https://maitranx.github.io/txmai-portfolio/?fbclid=IwAR0VPdmUeKtPQgnOvv1MeP2R1fayGtnkvTkhPp9f5TKvWlTVuQvq3qCY7GE#/blogs/Design-Dashboard-mobile-view-in-Power-BI"
+                            href="/#/blogs/Design-Dashboard-mobile-view-in-Power-BI"
                             >Dive in Now</a
                         >
                     </div>

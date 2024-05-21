@@ -25,7 +25,8 @@ export default {
                         <div class="text-sm text-ternary-dark dark:text-ternary-light">Stake</div>
                         <img src="@/assets/icons/Figma_logo.svg" class="w-10 ml-4" alt="Light Logo" /> 
                         <span class="text-neutral-200 text-xs font-semibold ml-2">Figma</span>
-                        <img :src="project.skate" class="w-18 ml-4" alt="Light Logo" />
+
+                        <img v-if="project.skate" :src="project.skate" class="w-18 ml-4" alt="Light Logo" />
                         <span v-if="project.skate && project.skate.includes('bpi')" 
                             class="text-neutral-200 text-xs font-semibold ml-2">Power BI</span> 
                         <span v-if="project.skate && project.skate.includes('sketch')" 

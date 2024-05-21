@@ -37,7 +37,7 @@ export default {
         <AppBanner />
 
         <!-- Projects -->
-        <ProjectsGrid v-if="!isSmallScreen" title="my work" category="Scalable ecosystem products" :projectList="filteredProjects" />
+        <ProjectsGrid v-if="!isSmallScreen" title="my work" category="Case Studies" :projectList="filteredProjects" />
 
         <!-- Load more projects button -->
         <div v-if="!isSmallScreen" class="flex justify-center items-center mb-20 xl:flex">

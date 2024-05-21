@@ -34,8 +34,10 @@ export default {
                 </div>
             </div>
             <div class="w-full xl:w-3/5 pt-10 text-slate-300 xl:text-base text-sm font-normal leading-snug">
-                Allow me to introduce myself as a design generalist with a diverse skill set in various areas, including UX design, design operations,
-                building scalable design systems, and developing MVPs from the ground up.
+                Allow me to introduce myself as a design generalist with expertise in UX design, design operations, 
+                and building scalable design systems. 
+                I'm passionate about the data, AI, and ML ops domain, bringing a multidisciplinary approach to create 
+                intuitive user experiences that leverage the power of data-driven insights.            
             </div>
             <div class="flex flex-col justify-center mt-16">
                 <!-- <div class="font-normal text-base xl:text-2xl xl:text-2xl text-center xl:text-left leading-none text-neutral-200 mb-6">

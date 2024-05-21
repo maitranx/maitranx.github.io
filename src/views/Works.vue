@@ -34,7 +34,7 @@ export default {
 
 <template>
 	<div class="w-full max-w-[1104px] px-[16px] md:px-0 md:mx-auto">
-		<ProjectsGrid title="my work" category="Scalable ecosystem products" :projectList="contributeProjects" class="my-20"/>
+		<ProjectsGrid title="my work" category="Case Studies" :projectList="contributeProjects" class="my-20"/>
 		<ProjectsGrid title="my work" category="Team contribution" :projectList="nonContributeProjects"/>
 	</div>
 </template>

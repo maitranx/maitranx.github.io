@@ -105,6 +105,24 @@ const projectdetails = [
         },
     },
     {
+        id: 'ds365.ai',
+        component: import(/* webpackChunkName: "project-details" */ '@/components/projects/DS365ai.vue'),
+        componentMobile: import(/* webpackChunkName: "project-details" */ '@/components/projects/DS365ai.vue'),
+        name: 'DS365.ai',
+        title: 'AI-Driven Software development platform',
+        relatedProject: null
+        // {
+        //     relatedProjectsHeading: 'Related Projects',
+        //     relatedProjects: [
+        //         {
+        //             id: 9,
+        //             title: 'NFT Marketplace',
+        //             img: require('@/assets/images/ui-project-1.jpg'),
+        //         },
+        //     ],
+        // },
+    },
+    {
         id: 'workshop',
         component: import(/* webpackChunkName: "project-details" */ '@/components/projects/Workshop.vue'),
         name: 'Team sharing & learning',

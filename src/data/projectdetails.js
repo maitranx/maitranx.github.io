@@ -109,7 +109,7 @@ const projectdetails = [
         component: import(/* webpackChunkName: "project-details" */ '@/components/projects/DS365ai.vue'),
         componentMobile: import(/* webpackChunkName: "project-details" */ '@/components/projects/DS365ai.vue'),
         name: 'DS365.ai',
-        title: 'AI-Driven Software development platform',
+        title: 'A cloud-based service in the oil & gas industry using advanced AI and ML models.',
         relatedProject: null
         // {
         //     relatedProjectsHeading: 'Related Projects',

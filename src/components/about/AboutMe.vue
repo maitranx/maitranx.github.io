@@ -15,14 +15,14 @@ export default {
     <div class="pw-full max-w-[1104px] px-[16px] md:px-0 md:mx-auto">
         <div class="xl:gap-10 text-ternary-dark dark:text-ternary-light mb-12">
             <Tabs>
-                <Tab title="Lifestyle">
+                <Tab title="Design professional">
                     <div class="flex flex-col xl:flex-row">
                         <!-- First Column -->
                         <div class="xl:w-3/5 mr-8 flex flex-col gap-6">
                             <div class="text-neutral-50 text-base font-normal leading-tight">about me</div>
                             <div class="flex-col justify-start items-start flex">
                                 <div class="text-white text-3xl md:text-5xl font-medium xl:w-2/3 text-left md:leading-normal">
-                                    Fulfilling & diverse lifestyle
+                                    Design professional
                                 </div>
                             </div>
                             <div class="text-slate-300 text-base font-normal leading-normal">
@@ -208,7 +208,7 @@ export default {
                         </div>
                     </div>
                 </Tab>
-                <Tab title="Design process">
+                <!-- <Tab title="Design process">
                     <div class="my-12">
                         <div class="flex-col flex text-left">
                             <div class="text-neutral-50 text-base font-normal leading-tight mb-6">about me</div>
@@ -449,7 +449,7 @@ export default {
                             </div>
                         </div>
                     </div>
-                </Tab>
+                </Tab> -->
                 <Tab title="What I do when I'm not working">
                     <div>
                         <div class="text-left text-white">

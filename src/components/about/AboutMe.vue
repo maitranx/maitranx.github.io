@@ -21,7 +21,7 @@ export default {
                         <div class="xl:w-3/5 mr-8 flex flex-col gap-6">
                             <div class="text-neutral-50 text-base font-normal leading-tight">about me</div>
                             <div class="flex-col justify-start items-start flex">
-                                <div class="text-white text-3xl md:text-5xl font-medium xl:w-2/3 text-left md:leading-normal">
+                                <div class="text-white text-3xl md:text-5xl font-medium text-left md:leading-normal whitespace-nowrap">
                                     Design professional
                                 </div>
                             </div>

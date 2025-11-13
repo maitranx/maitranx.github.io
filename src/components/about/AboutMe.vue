@@ -140,6 +140,73 @@ export default {
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- Certificate Section -->
+                    <div class="w-full xl:w-3/5 flex-col justify-start items-start gap-6 flex mt-12">
+                        <div class="self-stretch justify-between items-center flex">
+                            <div class="text-white text-3xl font-semibold leading-10">Certificate</div>
+                        </div>
+                        <div class="w-full flex-col justify-start items-start gap-4 flex">
+                            <!-- Certified SAFe Product Owner -->
+                            <div class="w-full p-6 bg-neutral-900 rounded-2xl flex-col justify-start items-start gap-4 flex text-primary-light">
+                                <div class="text-white text-lg font-semibold">Certified SAFe® Product Owner / Product Manager</div>
+                                <div class="text-neutral-400 text-base">SAFe by Scaled Agile, Inc.</div>
+                                <div class="text-neutral-400 text-sm">Issued by Nov 2024</div>
+                                <button class="text-cyan-300 text-sm font-normal underline">Show credential</button>
+                            </div>
+                            
+                            <!-- Microsoft Certified: Azure AI Fundamentals -->
+                            <div class="w-full p-6 bg-neutral-900 rounded-2xl flex-col justify-start items-start gap-4 flex text-primary-light">
+                                <div class="text-white text-lg font-semibold">Microsoft Certified: Azure AI Fundamentals</div>
+                                <div class="text-neutral-400 text-base">Microsoft</div>
+                                <div class="text-neutral-400 text-sm">Issued by Sep 2025</div>
+                                <button class="text-cyan-300 text-sm font-normal underline">Show credential</button>
+                            </div>
+                            
+                            <!-- Google UX Design Certificates -->
+                            <div class="w-full p-6 bg-neutral-900 rounded-2xl flex-col justify-start items-start gap-4 flex text-primary-light">
+                                <div class="text-white text-lg font-semibold">Conduct UX Research and Test Early Concepts</div>
+                                <div class="text-neutral-400 text-base">Google UX Design Professional</div>
+                                <div class="text-neutral-400 text-sm">Issued by Nov 2024</div>
+                                <button class="text-cyan-300 text-sm font-normal underline">Show credential</button>
+                            </div>
+                            
+                            <div class="w-full p-6 bg-neutral-900 rounded-2xl flex-col justify-start items-start gap-4 flex text-primary-light">
+                                <div class="text-white text-lg font-semibold">Create High-Fidelity Designs and Prototypes in Figma</div>
+                                <div class="text-neutral-400 text-base">Google UX Design Professional</div>
+                                <div class="text-neutral-400 text-sm">Issued by Nov 2024</div>
+                                <button class="text-cyan-300 text-sm font-normal underline">Show credential</button>
+                            </div>
+                            
+                            <div class="w-full p-6 bg-neutral-900 rounded-2xl flex-col justify-start items-start gap-4 flex text-primary-light">
+                                <div class="text-white text-lg font-semibold">Design a User Experience for Social Good & Prepare for Jobs</div>
+                                <div class="text-neutral-400 text-base">Google UX Design Professional</div>
+                                <div class="text-neutral-400 text-sm">Issued by Nov 2024</div>
+                                <button class="text-cyan-300 text-sm font-normal underline">Show credential</button>
+                            </div>
+                            
+                            <div class="w-full p-6 bg-neutral-900 rounded-2xl flex-col justify-start items-start gap-4 flex text-primary-light">
+                                <div class="text-white text-lg font-semibold">Build Wireframes and Low-Fidelity Prototypes</div>
+                                <div class="text-neutral-400 text-base">Google UX Design Professional</div>
+                                <div class="text-neutral-400 text-sm">Issued by Nov 2024</div>
+                                <button class="text-cyan-300 text-sm font-normal underline">Show credential</button>
+                            </div>
+                            
+                            <div class="w-full p-6 bg-neutral-900 rounded-2xl flex-col justify-start items-start gap-4 flex text-primary-light">
+                                <div class="text-white text-lg font-semibold">Foundations of User Experience (UX) Design</div>
+                                <div class="text-neutral-400 text-base">Google UX Design Professional</div>
+                                <div class="text-neutral-400 text-sm">Issued by Nov 2024</div>
+                                <button class="text-cyan-300 text-sm font-normal underline">Show credential</button>
+                            </div>
+                            
+                            <div class="w-full p-6 bg-neutral-900 rounded-2xl flex-col justify-start items-start gap-4 flex text-primary-light">
+                                <div class="text-white text-lg font-semibold">Start the UX Design Process: Empathize, Define, and Ideate</div>
+                                <div class="text-neutral-400 text-base">Google UX Design Professional</div>
+                                <div class="text-neutral-400 text-sm">Issued by Nov 2024</div>
+                                <button class="text-cyan-300 text-sm font-normal underline">Show credential</button>
+                            </div>
+                        </div>
+                    </div>
                 </Tab>
                 <Tab title="Design process">
                     <div class="my-12">

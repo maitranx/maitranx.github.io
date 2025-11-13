@@ -1,12 +1,96 @@
 <script>
 import Tabs from '@/components/reusable/Tabs.vue';
 import Tab from '@/components/reusable/Tab.vue';
+import CertificateModal from '@/components/CertificateModal.vue';
 
 export default {
     name: 'About',
     components: {
         Tab,
         Tabs,
+        CertificateModal,
+    },
+    data() {
+        return {
+            certificateModal: false,
+            selectedCertificate: null,
+            certificates: [
+                {
+                    id: 'safe-product-owner',
+                    title: 'Certified SAFe® Product Owner / Product Manager',
+                    issuer: 'SAFe by Scaled Agile, Inc.',
+                    issueDate: 'Issued by Nov 2024',
+                    pdfUrl: '/files/certificates/safe-product-owner.pdf'
+                },
+                {
+                    id: 'azure-ai-fundamentals',
+                    title: 'Microsoft Certified: Azure AI Fundamentals',
+                    issuer: 'Microsoft',
+                    issueDate: 'Issued by Sep 2025',
+                    pdfUrl: '/files/certificates/azure-ai-fundamentals.pdf'
+                },
+                {
+                    id: 'ux-research-concepts',
+                    title: 'Conduct UX Research and Test Early Concepts',
+                    issuer: 'Google UX Design Professional',
+                    issueDate: 'Issued by Nov 2024',
+                    pdfUrl: '/files/certificates/ux-research-concepts.pdf'
+                },
+                {
+                    id: 'figma-prototypes',
+                    title: 'Create High-Fidelity Designs and Prototypes in Figma',
+                    issuer: 'Google UX Design Professional',
+                    issueDate: 'Issued by Nov 2024',
+                    pdfUrl: '/files/certificates/figma-prototypes.pdf'
+                },
+                {
+                    id: 'social-good-ux',
+                    title: 'Design a User Experience for Social Good & Prepare for Jobs',
+                    issuer: 'Google UX Design Professional',
+                    issueDate: 'Issued by Nov 2024',
+                    pdfUrl: '/files/certificates/social-good-ux.pdf'
+                },
+                {
+                    id: 'wireframes-prototypes',
+                    title: 'Build Wireframes and Low-Fidelity Prototypes',
+                    issuer: 'Google UX Design Professional',
+                    issueDate: 'Issued by Nov 2024',
+                    pdfUrl: '/files/certificates/wireframes-prototypes.pdf'
+                },
+                {
+                    id: 'ux-foundations',
+                    title: 'Foundations of User Experience (UX) Design',
+                    issuer: 'Google UX Design Professional',
+                    issueDate: 'Issued by Nov 2024',
+                    pdfUrl: '/files/certificates/ux-foundations.pdf'
+                },
+                {
+                    id: 'ux-process-start',
+                    title: 'Start the UX Design Process: Empathize, Define, and Ideate',
+                    issuer: 'Google UX Design Professional',
+                    issueDate: 'Issued by Nov 2024',
+                    pdfUrl: '/files/certificates/ux-process-start.pdf'
+                }
+            ]
+        };
+    },
+    methods: {
+        showCertificateModal(certificateId = null) {
+            if (certificateId) {
+                this.selectedCertificate = this.certificates.find(cert => cert.id === certificateId);
+            } else {
+                this.selectedCertificate = null;
+            }
+            
+            if (this.certificateModal) {
+                // Stop screen scrolling
+                document.getElementsByTagName('html')[0].classList.remove('overflow-y-hidden');
+                this.certificateModal = false;
+            } else {
+                document.getElementsByTagName('html')[0].classList.add('overflow-y-hidden');
+                this.certificateModal = true;
+            }
+        },
     },
 };
 </script>
@@ -152,7 +236,7 @@ export default {
                                 <div class="text-white text-lg font-semibold">Certified SAFe® Product Owner / Product Manager</div>
                                 <div class="text-neutral-400 text-base">SAFe by Scaled Agile, Inc.</div>
                                 <div class="text-neutral-400 text-sm">Issued by Nov 2024</div>
-                                <button class="text-cyan-300 text-sm font-normal underline">Show credential</button>
+                                <button @click="showCertificateModal('safe-product-owner')" class="text-cyan-300 text-sm font-normal underline cursor-pointer hover:text-cyan-200 transition-colors">Show credential</button>
                             </div>
                             
                             <!-- Microsoft Certified: Azure AI Fundamentals -->
@@ -160,7 +244,7 @@ export default {
                                 <div class="text-white text-lg font-semibold">Microsoft Certified: Azure AI Fundamentals</div>
                                 <div class="text-neutral-400 text-base">Microsoft</div>
                                 <div class="text-neutral-400 text-sm">Issued by Sep 2025</div>
-                                <button class="text-cyan-300 text-sm font-normal underline">Show credential</button>
+                                <button @click="showCertificateModal('azure-ai-fundamentals')" class="text-cyan-300 text-sm font-normal underline cursor-pointer hover:text-cyan-200 transition-colors">Show credential</button>
                             </div>
                             
                             <!-- Google UX Design Certificates -->
@@ -168,42 +252,42 @@ export default {
                                 <div class="text-white text-lg font-semibold">Conduct UX Research and Test Early Concepts</div>
                                 <div class="text-neutral-400 text-base">Google UX Design Professional</div>
                                 <div class="text-neutral-400 text-sm">Issued by Nov 2024</div>
-                                <button class="text-cyan-300 text-sm font-normal underline">Show credential</button>
+                                <button @click="showCertificateModal('ux-research-concepts')" class="text-cyan-300 text-sm font-normal underline cursor-pointer hover:text-cyan-200 transition-colors">Show credential</button>
                             </div>
                             
                             <div class="w-full p-6 bg-neutral-900 rounded-2xl flex-col justify-start items-start gap-4 flex text-primary-light">
                                 <div class="text-white text-lg font-semibold">Create High-Fidelity Designs and Prototypes in Figma</div>
                                 <div class="text-neutral-400 text-base">Google UX Design Professional</div>
                                 <div class="text-neutral-400 text-sm">Issued by Nov 2024</div>
-                                <button class="text-cyan-300 text-sm font-normal underline">Show credential</button>
+                                <button @click="showCertificateModal('figma-prototypes')" class="text-cyan-300 text-sm font-normal underline cursor-pointer hover:text-cyan-200 transition-colors">Show credential</button>
                             </div>
                             
                             <div class="w-full p-6 bg-neutral-900 rounded-2xl flex-col justify-start items-start gap-4 flex text-primary-light">
                                 <div class="text-white text-lg font-semibold">Design a User Experience for Social Good & Prepare for Jobs</div>
                                 <div class="text-neutral-400 text-base">Google UX Design Professional</div>
                                 <div class="text-neutral-400 text-sm">Issued by Nov 2024</div>
-                                <button class="text-cyan-300 text-sm font-normal underline">Show credential</button>
+                                <button @click="showCertificateModal('social-good-ux')" class="text-cyan-300 text-sm font-normal underline cursor-pointer hover:text-cyan-200 transition-colors">Show credential</button>
                             </div>
                             
                             <div class="w-full p-6 bg-neutral-900 rounded-2xl flex-col justify-start items-start gap-4 flex text-primary-light">
                                 <div class="text-white text-lg font-semibold">Build Wireframes and Low-Fidelity Prototypes</div>
                                 <div class="text-neutral-400 text-base">Google UX Design Professional</div>
                                 <div class="text-neutral-400 text-sm">Issued by Nov 2024</div>
-                                <button class="text-cyan-300 text-sm font-normal underline">Show credential</button>
+                                <button @click="showCertificateModal('wireframes-prototypes')" class="text-cyan-300 text-sm font-normal underline cursor-pointer hover:text-cyan-200 transition-colors">Show credential</button>
                             </div>
                             
                             <div class="w-full p-6 bg-neutral-900 rounded-2xl flex-col justify-start items-start gap-4 flex text-primary-light">
                                 <div class="text-white text-lg font-semibold">Foundations of User Experience (UX) Design</div>
                                 <div class="text-neutral-400 text-base">Google UX Design Professional</div>
                                 <div class="text-neutral-400 text-sm">Issued by Nov 2024</div>
-                                <button class="text-cyan-300 text-sm font-normal underline">Show credential</button>
+                                <button @click="showCertificateModal('ux-foundations')" class="text-cyan-300 text-sm font-normal underline cursor-pointer hover:text-cyan-200 transition-colors">Show credential</button>
                             </div>
                             
                             <div class="w-full p-6 bg-neutral-900 rounded-2xl flex-col justify-start items-start gap-4 flex text-primary-light">
                                 <div class="text-white text-lg font-semibold">Start the UX Design Process: Empathize, Define, and Ideate</div>
                                 <div class="text-neutral-400 text-base">Google UX Design Professional</div>
                                 <div class="text-neutral-400 text-sm">Issued by Nov 2024</div>
-                                <button class="text-cyan-300 text-sm font-normal underline">Show credential</button>
+                                <button @click="showCertificateModal('ux-process-start')" class="text-cyan-300 text-sm font-normal underline cursor-pointer hover:text-cyan-200 transition-colors">Show credential</button>
                             </div>
                         </div>
                     </div>
@@ -484,5 +568,13 @@ export default {
                 </Tab>
             </Tabs>
         </div>
+        
+        <!-- Certificate Modal -->
+        <CertificateModal 
+            :showModal="showCertificateModal" 
+            :modal="certificateModal" 
+            :certificate="selectedCertificate"
+            aria-modal="Certificate Modal" 
+        />
     </div>
 </template>

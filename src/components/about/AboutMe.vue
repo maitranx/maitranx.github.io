@@ -15,13 +15,13 @@ export default {
             certificateModal: false,
             selectedCertificate: null,
             certificates: [
-                {
-                    id: 'safe-product-owner',
-                    title: 'Certified SAFe® Product Owner / Product Manager',
-                    issuer: 'SAFe by Scaled Agile, Inc.',
-                    issueDate: 'Issued by Nov 2024',
-                    pdfUrl: '/files/certificates/safe-product-owner.pdf'
-                },
+                // {
+                //     id: 'safe-product-owner',
+                //     title: 'Certified SAFe® Product Owner / Product Manager',
+                //     issuer: 'SAFe by Scaled Agile, Inc.',
+                //     issueDate: 'Issued by Nov 2024',
+                //     pdfUrl: '/files/certificates/safe-product-owner.pdf'
+                // },
                 {
                     id: 'azure-ai-fundamentals',
                     title: 'Microsoft Certified: Azure AI Fundamentals',
@@ -50,7 +50,7 @@ export default {
                     issueDate: 'Issued by Nov 2024',
                     pdfUrl: '/files/certificates/social-good-ux.pdf'
                 },
-                {
+                { 
                     id: 'wireframes-prototypes',
                     title: 'Build Wireframes and Low-Fidelity Prototypes',
                     issuer: 'Google UX Design Professional',
@@ -70,6 +70,27 @@ export default {
                     issuer: 'Google UX Design Professional',
                     issueDate: 'Issued by Nov 2024',
                     pdfUrl: '/files/certificates/ux-process-start.pdf'
+                },
+                {
+                    title: 'IIBA® Certification of Capability in Business Analysis™ (CCBA®) Exam Prep',
+                    id: 'ccba-exam-prep',
+                    issuer: 'International Institute of Business Analysis (IIBA)',
+                    issueDate: 'Issued by Dec 2024',
+                    pdfUrl: '/files/certificates/ccba-exam-prep.pdf'
+                },
+                {
+                    title: 'IIBA® Entry Certificate in Business Analysis™ (ECBA™) Exam Prep',
+                    id: 'ecba-exam-prep',
+                    issuer: 'International Institute of Business Analysis (IIBA)',
+                    issueDate: 'Issued by Dec 2024',
+                    pdfUrl: '/files/certificates/ecba-exam-prep.pdf'
+                }, 
+                {
+                    title: 'Build Dynamic User Interfaces (UI) for Websites',
+                    id: 'dynamic-uis-websites',
+                    issuer: 'Google UX Design Professional',
+                    issueDate: 'Issued by Nov 2024',
+                    pdfUrl: '/files/certificates/dynamic-uis-websites.pdf'
                 }
             ]
         };

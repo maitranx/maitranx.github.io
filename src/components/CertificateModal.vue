@@ -12,7 +12,19 @@ export default {
     updated() {
         feather.replace();
     },
-    methods: {},
+    methods: {
+        downloadPDF() {
+            if (!this.certificate?.pdfUrl) return;
+            
+            const link = document.createElement('a');
+            link.href = this.certificate.pdfUrl;
+            link.download = `${this.certificate.title.replace(/[^a-zA-Z0-9]/g, '_')}.pdf`;
+            link.target = '_blank';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    },
 };
 </script>
 
@@ -33,24 +45,37 @@ export default {
                             class="modal max-w-4xl mx-5 bg-secondary-light dark:bg-primary-dark max-h-screen shadow-lg flex-row rounded-lg relative"
                         >
                             <div
-                                class="modal-header flex justify-between gap-10 p-5 border-b border-ternary-light dark:border-ternary-dark"
+                                class="modal-header flex justify-between items-center gap-10 p-5 border-b border-ternary-light dark:border-ternary-dark"
                             >
                                 <h5 class="text-primary-dark dark:text-primary-light text-xl">
                                     {{ certificate?.title || 'Certificate' }}
                                 </h5>
-                                <button
-                                    class="px-4 font-bold text-primary-dark dark:text-primary-light"
-                                    @click="showModal()"
-                                >
-                                    <i data-feather="x"></i>
-                                </button>
+                                <div class="flex items-center gap-3">
+                                    <!-- Download Button -->
+                                    <button
+                                        v-if="certificate?.pdfUrl"
+                                        @click="downloadPDF()"
+                                        class="download-btn bg-blue-500 hover:bg-blue-600 text-white px-3 py-2 rounded-lg flex items-center gap-2 transition-all duration-200"
+                                        title="Download Certificate"
+                                    >
+                                        <i data-feather="download" class="w-4 h-4"></i>
+                                        <span class="hidden sm:inline text-sm">Download</span>
+                                    </button>
+                                    <!-- Close Button -->
+                                    <button
+                                        class="px-4 font-bold text-primary-dark dark:text-primary-light hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors duration-200"
+                                        @click="showModal()"
+                                    >
+                                        <i data-feather="x"></i>
+                                    </button>
+                                </div>
                             </div>
                             <div class="modal-body p-5 w-full h-full">
                                 <div class="text-center">
                                     <!-- PDF Viewer -->
                                     <div v-if="certificate?.pdfUrl" class="pdf-container">
                                         <iframe
-                                            :src="certificate.pdfUrl"
+                                            :src="certificate.pdfUrl + '#toolbar=0&navpanes=0'"
                                             class="w-full h-96 md:h-[600px] border border-gray-300 rounded"
                                             frameborder="0"
                                         >
@@ -112,5 +137,14 @@ export default {
 .fade-up-down-leave-to {
     opacity: 0;
     transform: translateY(-10px);
+}
+
+.download-btn {
+    user-select: none;
+}
+
+.download-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
 }
 </style>

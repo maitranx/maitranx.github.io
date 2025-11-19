@@ -15,13 +15,13 @@ export default {
             certificateModal: false,
             selectedCertificate: null,
             certificates: [
-                // {
-                //     id: 'safe-product-owner',
-                //     title: 'Certified SAFe® Product Owner / Product Manager',
-                //     issuer: 'SAFe by Scaled Agile, Inc.',
-                //     issueDate: 'Issued by Nov 2024',
-                //     pdfUrl: '/files/certificates/safe-product-owner.pdf'
-                // },
+                {
+                    id: 'safe-product-owner',
+                    title: 'Certified SAFe® Product Owner / Product Manager',
+                    issuer: 'SAFe by Scaled Agile, Inc.',
+                    issueDate: 'Issued by Nov 2024',
+                    pdfUrl: '/files/certificates/safe-product-owner.pdf'
+                },
                 {
                     id: 'azure-ai-fundamentals',
                     title: 'Microsoft Certified: Azure AI Fundamentals',

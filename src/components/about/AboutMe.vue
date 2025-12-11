@@ -206,7 +206,7 @@ export default {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="text-neutral-200 text-base font-normal leading-tight ml-0 sm:ml-auto mt-3">Senior Product designer</div>
+                                    <div class="text-neutral-200 text-base font-normal leading-tight ml-0 sm:ml-auto mt-3">Senior UI/UX Designer</div>
                                 </div>
                                 <div class="self-stretch py-4 border-t border-dashed border-neutral-500 flex flex-col sm:flex-row">
                                     <div class="justify-start items-center gap-2 flex">
@@ -223,7 +223,7 @@ export default {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="text-neutral-200 text-base font-normal leading-tight ml-0 sm:ml-auto mt-3">Product designer</div>
+                                    <div class="text-neutral-200 text-base font-normal leading-tight ml-0 sm:ml-auto mt-3">UI/UX Designer</div>
                                 </div>
                                 <div class="self-stretch pt-4 border-t border-dashed border-neutral-500 justify-between flex flex-col sm:flex-row">
                                     <div class="justify-start items-center gap-2 flex">

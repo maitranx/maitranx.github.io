@@ -30,7 +30,7 @@ export default {
                 Xin chào! 👋 I’m Mai,
                 <div class="flex flex-row mt-4 font-medium xl:text-6xl text-[32px] leading-none text-primary-light">
                     a&nbsp;
-                    <span class="bg-gradient-to-r from-indigo-200 to-sky-300 text-transparent bg-clip-text pb-4">product designer </span>
+                    <span class="bg-gradient-to-r from-indigo-200 to-sky-300 text-transparent bg-clip-text pb-4">UI/UX Designer</span>
                 </div>
             </div>
             <div class="w-full xl:w-3/5 pt-10 text-slate-300 xl:text-base text-sm font-normal leading-snug">

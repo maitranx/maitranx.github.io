@@ -201,7 +201,7 @@ export default {
                                                 <div class="text-white text-base font-normal font-['Poppins'] leading-tight">mesoneer</div>
                                                 <div class="text-neutral-400">|</div>
                                                 <div class="text-neutral-400 text-base font-normal font-['Poppins'] leading-tight">
-                                                    02.2026 - Present
+                                                    01.2026 - Present
                                                 </div>
                                             </div>
                                         </div>

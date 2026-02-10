@@ -194,6 +194,23 @@ export default {
                                 <div class="self-stretch pb-4 justify-between flex flex-col sm:flex-row">
                                     <div class="justify-start items-center gap-2 flex">
                                         <div class="w-11 h-11 relative">
+                                            <img src="@/assets/images/mesoneerlogo.png" />
+                                        </div>
+                                        <div class="flex-col justify-center items-start gap-1 flex">
+                                            <div class="h-5 justify-start items-center gap-2 flex">
+                                                <div class="text-white text-base font-normal font-['Poppins'] leading-tight">mesoneer</div>
+                                                <div class="text-neutral-400">|</div>
+                                                <div class="text-neutral-400 text-base font-normal font-['Poppins'] leading-tight">
+                                                    02.2026 - Present
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-neutral-200 text-base font-normal leading-tight ml-0 sm:ml-auto mt-3">User Experience Designer</div>
+                                </div>
+                                <div class="self-stretch pb-4 justify-between flex flex-col sm:flex-row">
+                                    <div class="justify-start items-center gap-2 flex">
+                                        <div class="w-11 h-11 relative">
                                             <img src="@/assets/images/fpt.png" />
                                         </div>
                                         <div class="flex-col justify-center items-start gap-1 flex">
@@ -201,7 +218,7 @@ export default {
                                                 <div class="text-white text-base font-normal font-['Poppins'] leading-tight">FPT Design</div>
                                                 <div class="text-neutral-400">|</div>
                                                 <div class="text-neutral-400 text-base font-normal font-['Poppins'] leading-tight">
-                                                    10.2022 - Current
+                                                    10.2022 - 1.2026
                                                 </div>
                                             </div>
                                         </div>

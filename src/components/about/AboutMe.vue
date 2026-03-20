@@ -208,7 +208,7 @@ export default {
                                     </div>
                                     <div class="text-neutral-200 text-base font-normal leading-tight ml-0 sm:ml-auto mt-3">User Experience Designer</div>
                                 </div>
-                                <div class="self-stretch border-t border-dashed border-neutral-500 pb-4 justify-between flex flex-col sm:flex-row">
+                                <div class="self-stretch border-t border-dashed border-neutral-500 py-4 justify-between flex flex-col sm:flex-row">
                                     <div class="justify-start items-center gap-2 flex">
                                         <div class="w-11 h-11 relative">
                                             <img src="@/assets/images/fpt.png" />
